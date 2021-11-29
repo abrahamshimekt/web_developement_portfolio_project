@@ -1,7 +1,32 @@
 #header{
     background-color:rgb(38, 247, 142);
     height:2em;
+    color:black;
+    font-size: large;
 }
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: ">\00a0";
+  }
+  ul.breadcrumb li a {
+    color: #0f8d0b;
+    text-decoration: none;
+  }
+  ul.breadcrumb li a:hover {
+    color: #1fcf95;
+    font-weight:bolder;
+    text-decoration: underline;
+  }
 .home a{
     float:right;
     color:rgb(80, 133, 247);
