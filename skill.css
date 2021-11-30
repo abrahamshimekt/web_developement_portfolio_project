@@ -1,46 +1,48 @@
-#script,#py,#gr,#html,#java{
-    font-size: 20px;
+#script,
+#py,
+#gr,
+#html,
+#java {
+  font-size: 20px;
 }
 
 .container {
-    background-color: rgb(192, 192, 192);
-    width: 40%;
-    border-radius: 10px;
+  background-color: rgb(192, 192, 192);
+  width: 40%;
+  border-radius: 10px;
 }
 
 .skill {
-    background-color: rgb(116, 194, 92);
-    color: white;
-    padding: 1%;
-    text-align: right;
-    font-size: 20px;
-    border-radius: 15px;
+  background-color: rgb(116, 194, 92);
+  color: white;
+  padding: 1%;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 15px;
 }
 
 .JavaScript {
-    width: 75%;
+  width: 75%;
 }
 
 .Python {
-    width: 85%;
+  width: 85%;
 }
-.Graphics{
-    width:60%;
+.Graphics {
+  width: 60%;
 }
-.HTML{
-    width:90%;
+.HTML {
+  width: 90%;
 }
-.Java{
-    width:80%
+.Java {
+  width: 80%;
 }
-#skills{
-    position:relative;
-    margin-top:50em;
-    margin-left:40em;
-    ;
+#skills {
+  position: relative;
+  margin-top: 50em;
+  margin-left: 40em;
 }
-.experience{
-    position: absolute;
-    top:52em;
-
+.experience {
+  position: absolute;
+  top: 52em;
 }

@@ -1,96 +1,91 @@
-#header{
-    background-color:rgb(38, 247, 142);
-    height:2em;
-    color:black;
-    font-size: large;
+#header {
+  background-color: rgb(38, 247, 142);
+  height: 2em;
+  color: black;
+  font-size: large;
 }
 ul.breadcrumb {
-    padding: 10px 16px;
-    list-style: none;
-    background-color: #eee;
-  }
-  ul.breadcrumb li {
-    display: inline;
-    font-size: 18px;
-  }
-  ul.breadcrumb li+li:before {
-    padding: 8px;
-    color: black;
-    content: ">\00a0";
-  }
-  ul.breadcrumb li a {
-    color: #0f8d0b;
-    text-decoration: none;
-  }
-  ul.breadcrumb li a:hover {
-    color: #1fcf95;
-    font-weight:bolder;
-    text-decoration: underline;
-  }
-.home a{
-    float:right;
-    color:rgb(80, 133, 247);
-    padding:5px;
-    position:relative;
-
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
 }
-.profile{
-    position:absolute;
-    top:220px;
-    bottom: 50px;
-    right:50px;
-    left:250px;
-     display: flex;
-    justify-content:center;
-    /* margin-left: auto;
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: ">\00a0";
+}
+ul.breadcrumb li a {
+  color: #0f8d0b;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #1fcf95;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+.home a {
+  float: right;
+  color: rgb(80, 133, 247);
+  padding: 5px;
+  position: relative;
+}
+.profile {
+  position: absolute;
+  top: 220px;
+  bottom: 50px;
+  right: 50px;
+  left: 250px;
+  display: flex;
+  justify-content: center;
+  /* margin-left: auto;
     margin-right: auto; */
-    width:50%; 
+  width: 50%;
 }
-img{
-    object-fit: cover;
-    width:200px;
-    border-radius:200px;
+img {
+  object-fit: cover;
+  width: 200px;
+  border-radius: 200px;
 }
-#photo{
-    position: absolute;
-    top:220px;
-    left:255px;
+#photo {
+  position: absolute;
+  top: 220px;
+  left: 255px;
 }
-.hi{
-    position:absolute;
-    top:500px;
-    bottom: 50px; 
-    right:50px;
-    left:500px;
-
+.hi {
+  position: absolute;
+  top: 500px;
+  bottom: 50px;
+  right: 50px;
+  left: 500px;
 }
-#more{
-    position:absolute;
-    top:582px;
-    bottom: 50px; 
-    right:50px;
-    left:200px;
-
-
+#more {
+  position: absolute;
+  top: 582px;
+  bottom: 50px;
+  right: 50px;
+  left: 200px;
 }
-#contact{
-    position:relative;
-    top:650px;
-    bottom: 50px; 
-    right:50px;
-    left:500px;
-    background-color:darkturquoise;
+#contact {
+  position: relative;
+  top: 650px;
+  bottom: 50px;
+  right: 50px;
+  left: 500px;
+  background-color: darkturquoise;
 }
-#footer{
-    position:fixed;
-    left:0%;
-    bottom:0%;
-
+#footer {
+  position: fixed;
+  left: 0%;
+  bottom: 0%;
 }
-button{
-    /* position:absolute;
+button {
+  /* position:absolute;
     top:700px;
     right:100px;
     left:600px; */
-    width: 50pxpx;
+  width: 50pxpx;
 }
