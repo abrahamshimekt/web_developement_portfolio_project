@@ -1,5 +1,48 @@
-.Colleagues{
-  max-width: 100%;
-  object-fit: cover;
-  display: flex;
+.coll{
+  display:grid;
+
+}
+#colleagues{
+
+  grid-template-columns: 20% 20% 20% 20% 20% ;
+}
+#colleagues img{
+  width:100%;
+  height:auto;
+}
+.breadcrumb{
+  background-color:black;
+  display:grid;
+  list-style:none;
+
+
+}
+.breadcrumb >nav>ul {
+  grid-template-rows: 15% 15% 15% 15% 15% 15%;
+  font-size: 1rem;
+  display:flex;
+}
+.breadcrumb >nav> ul > li > a {
+  color:white;
+  text-decoration: none;
+}
+.breadcrumb>nav>ul>li + li:before {
+  padding:0.5rem;
+  color:white;
+  content: ">\00a0";
+}
+
+.breadcrumb > nav > ul> li a:hover {
+  color:green;
+  font-weight: bolder;
+}
+.breadcrumb >nav>ul>li a:disabled{
+  pointer-events: none;
+}
+
+@media screen and (max-width: 600px) {
+  .breadcrumb>nav>ul{
+    display:block;
+  }
+ 
 }
