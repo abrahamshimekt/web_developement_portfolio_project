@@ -1,10 +1,12 @@
-.navbar{
+*{
   margin:0;
   padding:0;
+  list-style:none;
+  text-decoration:none;
   box-sizing:border-box;
 }
 nav{
-  background:blue;
+  background:black;
   width:100%;
   height:70px;
 }
@@ -34,6 +36,7 @@ nav ul li{
 }
 nav ul li a{
   text-decoration: none;
+  border-radius:3px;
   font-size:16px; 
   color: #f2f2f2;
   text-align: center;
@@ -46,6 +49,7 @@ nav ul li a{
   line-height:80px;
   margin-right:40px;
   cursor:pointer;
+  display:none;
 
 
 }
@@ -61,7 +65,7 @@ nav ul li a{
   .checkbtn{
     display:block;
   }
-  ul{
+  nav ul{
     position:fixed;
     width:100%;
     height:100vh;
@@ -88,19 +92,43 @@ nav ul li a{
   }
 }
 #profile{
-  max-width:100%;
-  margin:2vw 5v;
-  height:auto;
-  border-radius:50vw;
-  object-fit:cover;
+  display: block;
+  margin-top: 15rem;
+  margin-bottom:3rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border-radius:100px;
 }
-#about h3{
-  font-size:5vw;
+#about {
+  display:grid;
+  grid-template-rows:20% 80%;
+  text-align: center;
 }
-#about h4{
-  font-size:3vw;
+#about > div{
+  background-color:#eee;
+  font-size:rem;
+  padding:1em;
+
 }
-#about p{
-  font-size:2vw;
+#about > div:nth-child(:only-child){
+  font-size:3rem;
+  background-color: rgb(53, 28, 28);
+  border:0 15rem 0 15rem;
+  
 }
+#mail{
+  margin-top:1rem;
+}
+footer{
+  margin:10rem 0 0 0;
+   left: 0;
+   bottom: 0;
+   padding:2rem 0 1rem 0;
+   width: 100%;
+   background-color:black;
+   color: white;
+   text-align: left;
+}
+
 
