@@ -3,103 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name ="viewport" content = "width=device-width,intial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="home.css" />
     <link rel="icon" type="image/x-icon" href="images/favicon.jpg" />
-    <link rel="stylesheet" type="text/css" href="skill.css" />
-    <link rel="stylesheet" type="text/css" href="colleagues.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
-    <div id="header">
-      <header>
-        <ul class="breadcrumb">
-          <li><a href="Home.html">Home</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="Lectures.html">Lectures</a></li>
-          <li><a href="#Colleagues">Colleagues</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="Contact.html">Contact</a></li>
+    <div class="navbar">
+      <nav>
+        <input type="checkbox" id="cehck">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li ><a href="Home.html" class="active">Home</a></li>
+          <li ><a href="skills.html">Skills</a></li>
+          <li ><a href="Lectures.html">Lectures</a></li>
+          <li ><a href="Colleagues.html">Colleagues</a></li>
+          <li ><a href="About.html">About</a></li>
+          <li ><a href="Contact.html">Contact</a></li>
         </ul>
-      </header>
+      </nav> 
     </div>
-    <div class="profile">
+    <section></section>
+
+    <div>
       <figure>
-        <img src="images/abe.jpg" alt="Abraham Shimekt" />
+        <img src="images/abe.jpg" id ="profile" alt="Abraham Shimekt" />
         <figcaption id="photo">Abraham Shimekt</figcaption>
       </figure>
     </div>
-    <div class="hi">
+    <div id="about">
       <h3>Hi,I'm Abraham</h3>
       <h4>Software Engineer</h4>
-    </div>
-    <section id="more">
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
         veritatis repellendus quo libero impedit nam omnis neque sunt
         consectetur illo, non aspernatur amet accusantium, a provident itaque,
         doloremque facilis laudantium?
       </p>
-    </section>
-    <form>
-      <a href="MailTo:abrahamshimekt@gmail.com">
-        <button type="button" id="contact">contact me</button>
-      </a>
-    </form>
-    <section id="skills">
-      <h2>Skills</h2>
-      <h3>what I know</h3>
-      <p id="script">JavaScript</p>
-      <div class="container">
-        <div class="skill JavaScript">75%</div>
-      </div>
-      <p id="py">Python</p>
-      <div class="container">
-        <div class="skill Python">85%</div>
-      </div>
-      <p id="gr">Graphics</p>
-      <div class="container">
-        <div class="skill Graphics">60%</div>
-      </div>
-      <p id="html">HTML</p>
-      <div class="container">
-        <div class="skill HTML">90%</div>
-      </div>
-      <p id="java">Java</p>
-      <div class="container">
-        <div class="skill Java">80%</div>
-      </div>
-    </section>
-    <section class="experience">
-      <div>
-        <h2>Experiences</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus<br />
-          temporibus quas ratione animi hic sed tempora qui laboriosam? <br />
-          Dicta id est nostrum maxime voluptatum quaerat hic, sequi animi<br />
-          error dignissimos! Debitis provident deserunt dolorum eveniet modi,
-          iste amet quam <br />
-          dolore ipsum! Mollitia!
-        </p>
-      </div>
-    </section>
-    <section class="withme">
-      <div id="Colleagues">
-        <h2>Colleagues</h2>
-        <h3>who is with me</h3>
-        <img src="images/john.jpg" alt="" />
-        <img src="images/julia.jpg" alt="" />
-        <img src="images/catherin.jpg" alt="" />
-      </div>
-      <div id="campanies">
-        <h2>Companies</h2>
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-      </div>
-    </section>
+    </div>
+      <a href="MailTo:abrahamshimekt@gmail.com">Contact Me</a>
     <footer id="footer">
       <p>created by Abraham Shimekt</p>
     </footer>
