@@ -108,8 +108,12 @@ nav ul li a{
 #about > div{
   background-color:#eee;
   font-size:rem;
+
   padding:1em;
 
+}
+#about>div> p::first-letter{
+  
 }
 #about > div:nth-child(:only-child){
   font-size:3rem;
@@ -121,10 +125,10 @@ nav ul li a{
   margin-top:1rem;
 }
 footer{
-  margin:10rem 0 0 0;
+  margin:20rem 0 0 0;
    left: 0;
    bottom: 0;
-   padding:2rem 0 1rem 0;
+   padding:1rem 0 1rem 0;
    width: 100%;
    background-color:black;
    color: white;

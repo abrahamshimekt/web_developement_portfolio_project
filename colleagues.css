@@ -1,15 +1,4 @@
-.coll{
-  display:grid;
 
-}
-#colleagues{
-
-  grid-template-columns: 20% 20% 20% 20% 20% ;
-}
-#colleagues img{
-  width:100%;
-  height:auto;
-}
 .breadcrumb{
   background-color:black;
   display:grid;
@@ -43,6 +32,45 @@
 @media screen and (max-width: 600px) {
   .breadcrumb>nav>ul{
     display:block;
+    margin-left:0;
   }
  
 }
+.coll{
+  display:flex;
+
+}
+.professionals{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+.professionals:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container {
+  padding: 2px 16px;
+}
+#companies{
+  display:grid;
+  
+}
+#companies>img{
+  width:100%;
+  grid-template-columns:50% 50%;
+  /* padding:2rem; */
+}
+footer{
+  margin:10rem 0 0 0;
+   left: 0;
+   bottom: 0;
+   padding:2rem 0 1rem 0;
+   width: 100%;
+   background-color:black;
+   color: white;
+   text-align: left;
+}
+
+
+
+
