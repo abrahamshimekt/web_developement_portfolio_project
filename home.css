@@ -1,138 +1,134 @@
 *{
-  margin:0;
-  padding:0;
-  list-style:none;
-  text-decoration:none;
+  margin:0rem;
+  padding:0rem;
   box-sizing:border-box;
 }
-nav{
-  background:black;
+.navbar{
   width:100%;
-  height:70px;
+  background:black;
 }
-nav ul{
-  float:right;
-  margin-right:20px;
+.navbar > nav  ul{
+  list-style:none;
+  display:flex;
+  justify-content: flex-end;
+ 
+}
+.navbar > nav > ul li{
+  align-items:center;
+  padding:1rem 0;
+
+}
+.navbar> nav > ul li a{
+  color:white;
+  padding:1rem;
+  font-size:1em;
+  font-family:"Nunito sans";
+  text-decoration:none;
+  
 }
 .navbar a:hover{
-  background-color:#00ffff;
-  color: black;
-
+  background:green;
 }
-
-.navbar a.active{
-  background-color: #04AA6D;
-  color: white;
-  transition:.5s;
-}
-nav ul li{
-  display:inline-block;
-  list-style:none;
-  margin-top:0px;
-  line-height:80px;
-  margin:0 5px;
-  /* align-content: center;
-  align-items: center; */
-}
-nav ul li a{
-  text-decoration: none;
-  border-radius:3px;
-  font-size:16px; 
-  color: #f2f2f2;
-  text-align: center;
-  font-family:Arial, Helvetica, sans-serif;
-}
-.checkbtn{
-  font-size:3opx;
-  color:white;
-  float:right;
-  line-height:80px;
-  margin-right:40px;
-  cursor:pointer;
-  display:none;
-
-
+.navbar a:active{
+  background-color: blueviolet;
 }
 #check{
   display:none;
 }
-@media (max-width:900px){
-  nav ul li a{
-    font-size:16px;
-  }
+.checkarea{
+  background-color:black;
+  border-bottom:2px solid white;
+  color:white;
+  padding:10px;
+  display:flex;
+  justify-content: flex-end;
 }
-@media (max-width:800px){
-  .checkbtn{
-    display:block;
-  }
-  nav ul{
-    position:fixed;
-    width:100%;
-    height:100vh;
-    background:chocolate;
-    top:60px;
-    left:-100%;
-    text-align:center;
-    transition:all .5s;
-  }
-  nav ul li{
-    display:block;
-    margin:50px 0;
-    line-height:30px;
-  }
-  nav ul li a{
-    font-size:20px;
-  }
-  a:hover, a.active{
-    background:none;
-    color:rgb(121, 25, 150);
-  }
-  #check:checked ~ul{
-    left:0;
-  }
+.checkarea label{
+  background-color:black;
+  width:45px;
+  height:50px;
+  color:white;
+  cursor:pointer;
+  border-radius:10px;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
 }
-#profile{
-  display: block;
-  margin-top: 15rem;
-  margin-bottom:3rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  border-radius:100px;
+.checkarea label span{
+  background-color:white;
+  height:2px;
+  width:40%;
+  margin:5px 0px;
+  align-items:center;
+  justify-content:center;
+  transform: rotate(90deg);
+  
 }
-#about {
+.checkarea{
+  display:none;
+
+}
+@media screen and (max-width:600px){
+.navbar nav ul{
+  flex-direction:column;
+  display:none;
+}
+#check:checked + .navbar nav ul{
+  display:flex;
+}
+.checkarea{
+  display:flex;
+}
+}
+
+.profile{
   display:grid;
-  grid-template-rows:20% 80%;
-  text-align: center;
-}
-#about > div{
-  background-color:#eee;
-  font-size:rem;
-
-  padding:1em;
+  grid-template-columns: 30% 40% ;
+  grid-row-gap:2rem;
+  grid-column-gap:2px;
+  margin-top:10rem;
 
 }
-#about>div> p::first-letter{
+.social a i{
+  width:100%;
+  height:auto;
+  object-fit: cover;
+  padding:0.5rem;
+  display:block;
   
+
+
 }
-#about > div:nth-child(:only-child){
-  font-size:3rem;
-  background-color: rgb(53, 28, 28);
-  border:0 15rem 0 15rem;
-  
+.social a{
+  text-decoration:none
 }
-#mail{
-  margin-top:1rem;
+.name img {
+  width:100%;
+  height:auto;
+  object-fit: cover;
+ 
+  border-radius:30rem;
 }
-footer{
-  margin:20rem 0 0 0;
-   left: 0;
-   bottom: 0;
-   padding:1rem 0 1rem 0;
-   width: 100%;
-   background-color:black;
-   color: white;
-   text-align: left;
+.name h3 h4{
+  text-align:center;
+} 
+.about{
+  background-color:black;
+  color:white;
+  grid-column: 2/ span 1;
+  justify-content: center;
+
+
+}
+
+.footer{
+  display:flex;
+  background:black;
+  color:white;
+  width:100%;
+  padding:2rem 0;
+  margin-left:0px;;
+  margin-top:20rem;
 }
 
 
