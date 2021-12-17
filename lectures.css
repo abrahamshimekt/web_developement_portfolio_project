@@ -1,51 +1,82 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 .breadcrumb{
+  width:100%;
+  padding:2rem 0 2rem 0;
   background-color:black;
-  display:grid;
+}
+.breadcrumb nav ul{
+  display:flex;
+  flex-direction:row;
   list-style:none;
-
-
 }
-.breadcrumb >nav>ul {
-  grid-template-columns: 15% 15% 15% 15% 15% 15%;
-  font-size: 1rem;
-  display:flex;
-}
-.breadcrumb >nav> ul > li > a {
+.breadcrumb nav ul li a{
   color:white;
-  text-decoration: none;
-}
-.breadcrumb>nav>ul>li + li:before {
-  padding:0.5rem;
-  color:white;
-  content: ">\00a0";
-}
-
-.breadcrumb > nav > ul> li a:hover {
-  color:green;
-  font-weight: bolder;
-}
-.breadcrumb >nav>ul>li a:disabled{
-  pointer-events: none;
-}
-#endnav{
-  display:flex;
-  float:right;
-  
-
-
-}
-#endnav > div > a{
-  color:white;
+  text-decoration:none;
   padding:1rem;
 
 }
+.breadcrumb nav ul li a:hover{
+  background-color:green;
 
-@media screen and (max-width: 600px) {
-  .breadcrumb>nav>ul{
-    display:block;
-  }
- 
 }
+.breadcrumb nav ul li a.disabled{
+  color:white;
+}
+/* .breadcrumb>nav>ul>li + li:before {
+  padding:0.5rem;
+  color:white;
+  content: ">\00a0";
+} */
+#endnav{
+  display:flex;
+  justify-content: flex-end;
+  margin-top:-1rem;
+  margin-right:5rem;
+}
+#endnav div{
+  padding:0 1em 0 1em;
+}
+#endnav div a{
+  color:white;
+  text-decoration:none;
+
+}
+
+@media (max-width:600px){
+  .breadcrumb nav ul{
+    display:flex;
+    flex-direction:column;
+    list-style:none;
+  }
+  .breadcrumb nav ul li{
+padding: 3%;
+
+  }
+  /* .breadcrumb>nav>ul>li + li:before {
+    color:white;
+    content: "";
+    margin-left:-1em;
+  } */
+  #endnav{
+    display:flex;
+    flex-direction:column;
+    margin-top:1em;
+  }
+  #endnav div{
+    padding:0.5rem 2rem;
+
+  }
+  #endnav div input{
+    border-radius: 1rem;
+    width:7rem;
+  }
+}
+
+
 .service{
   display:grid;
   text-align:center;
@@ -56,7 +87,7 @@
 }
 .container{
   display:grid;
-  grid-template-columns:33% 33% 33%;
+  grid-template-columns:1fr 1fr 1fr;
   column-gap:2rem;
   margin-left:5rem;
   margin-right:8rem;
@@ -64,12 +95,15 @@
 
 }
 .container div{
-  padding:5rem;
   border-style:solid;
+  padding:2em 1em 0 1em;
+}
+.container div img{
+  width:100%;
 }
 .videoContainer{
   display:grid;
-  grid-template-columns:33% 33% 33%;
+  grid-template-columns:1fr 1fr 1fr;
   column-gap:2rem;
   margin-left:5rem;
   margin-right:8rem;
@@ -100,6 +134,10 @@
     margin-left:1rem;
     margin-right:1rem;
   } 
+  .videoContainer div video{
+    width:100%;
+    height:auto;
+  }
   
   
 }

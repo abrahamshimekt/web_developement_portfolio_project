@@ -24,44 +24,28 @@
   background-color:green;
 
 }
+/* .breadcrumb>nav>ul>li + li:before {
+  padding:0.5rem;
+  color:white;
+  content: ">\00a0";
+} */
 @media (max-width:600px){
   .breadcrumb nav ul{
     display:flex;
     flex-direction:column;
     list-style:none;
   }
+  .breadcrumb nav ul li{
+padding: 3%;
+
+  }
+  /* .breadcrumb>nav>ul>li + li:before {
+    color:white;
+    content: "";
+    margin-left:-1em;
+  } */
 }
 
-
-/* .breadcrumb{
-  background-color:black;
-  display:grid;
-  list-style:none;
-
-
-}
-.breadcrumb >nav>ul {
-  grid-template-rows: 15% 15% 15% 15% 15% 15%;
-  font-size: 1rem;
-  display:flex;
-}
-.breadcrumb >nav> ul > li > a {
-  color:white;
-  text-decoration: none;
-}
-.breadcrumb>nav>ul>li + li:before {
-  padding:0.5rem;
-  color:white;
-  content: ">\00a0";
-}
-
-.breadcrumb > nav > ul> li a:hover {
-  color:green;
-  font-weight: bolder;
-}
-.breadcrumb >nav>ul>li a:disabled{
-  pointer-events: none;
-} */
 
 .who{
   display:grid;
@@ -87,6 +71,15 @@
 .container {
   padding: 5fr 1fr;
 }
+@media (max-width:600px){
+  .coll{
+    display:grid;
+    grid-template-columns:1fr ;
+    column-gap:2rem;
+  
+  }
+}
+
 #companies{
   display:grid;
   
@@ -94,7 +87,6 @@
 #companies>img{
   width:100%;
   grid-template-columns:50% 50%;
-  /* padding:2rem; */
 }
 .footer{
   display:flex;

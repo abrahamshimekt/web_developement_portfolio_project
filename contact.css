@@ -14,11 +14,11 @@ breadcrumb{
     color:white;
     text-decoration: none;
   }
-  .breadcrumb>nav>ul>li + li:before {
+  /* .breadcrumb>nav>ul>li + li:before {
     padding:0.5rem;
     color:white;
     content: ">\00a0";
-  }
+  } */
   
   .breadcrumb > nav > ul> li a:hover {
     color:green;

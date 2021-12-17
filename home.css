@@ -29,8 +29,8 @@
 .navbar a:hover{
   background:green;
 }
-.navbar a:active{
-  background-color: blueviolet;
+.navbar a.disabled{
+ color:white;
 }
 #check{
   display:none;
