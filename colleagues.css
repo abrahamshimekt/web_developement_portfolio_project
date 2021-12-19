@@ -4,47 +4,56 @@
   padding:0;
   box-sizing:border-box;
 }
-.breadcrumb{
+.navbar{
   width:100%;
   padding:2rem 0 2rem 0;
   background-color:black;
 }
-.breadcrumb nav ul{
+.navbar nav ul{
   display:flex;
   flex-direction:row;
   list-style:none;
+  justify-content:flex-end;
 }
-.breadcrumb nav ul li a{
+.navbar nav ul li a{
   color:white;
   text-decoration:none;
   padding:1rem;
 
 }
-.breadcrumb nav ul li a:hover{
+.navbar nav ul li a:hover{
   background-color:green;
 
 }
-/* .breadcrumb>nav>ul>li + li:before {
-  padding:0.5rem;
-  color:white;
-  content: ">\00a0";
-} */
 @media (max-width:600px){
-  .breadcrumb nav ul{
+  .navbar nav ul{
     display:flex;
     flex-direction:column;
     list-style:none;
   }
-  .breadcrumb nav ul li{
+  .navbar nav ul li{
 padding: 3%;
 
   }
-  /* .breadcrumb>nav>ul>li + li:before {
-    color:white;
-    content: "";
-    margin-left:-1em;
-  } */
 }
+.breadcrumb{
+  margin-top:1rem;
+  
+}
+.breadcrumb ul{
+  list-style:none;
+  display:flex;
+}
+.breadcrumb ul li a{
+  text-decoration:none;
+}
+.breadcrumb ul>li + li:before{
+  content:"\203a";
+  color:grey;
+  padding:0.5rem;
+
+}
+
 
 
 .who{
@@ -52,16 +61,19 @@ padding: 3%;
   grid-template-rows:1fr 1fr;
   justify-content:center;
   margin-top:5rem;
+  box-shadow:inset 1rem rgba(0,0,0,0.5);
 }
 .coll{
   display:grid;
   grid-template-columns:1fr 1fr 1fr;
   column-gap:2rem;
+  margin:3rem;
+
 
 }
 .professionals{
-  padding:2rem;
-  margin-top:3rem;
+  padding:1rem;
+  box-shadow:0 0 0.5rem 0 rgba(0,0,0,0.5) ;
 
 
 }
@@ -69,7 +81,7 @@ padding: 3%;
   box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
 }
 .container {
-  padding: 5fr 1fr;
+  padding: 3fr 1fr;
 }
 @media (max-width:600px){
   .coll{
@@ -80,13 +92,29 @@ padding: 3%;
   }
 }
 
-#companies{
+.companies{
   display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  column-gap:2rem;
+  margin:3rem;
+  
   
 }
-#companies>img{
+.companies div{
+  border:0.1rem solid;
+  box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,0.4);
+}
+.companies div  img{
   width:100%;
-  grid-template-columns:50% 50%;
+  height:auto;
+
+}
+@media screen and (max-width:600px){
+  .companies{
+    display:grid;
+    grid-template-columns:1fr;
+    row-gap:2rem;
+  }
 }
 .footer{
   display:flex;

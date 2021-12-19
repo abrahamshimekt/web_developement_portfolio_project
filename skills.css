@@ -56,8 +56,108 @@ padding: 3%;
 .skill-container .skills .skill span{
   font-size:1.0625rem;
   font-weight:500;
+  opacity:0;
+  animation:showText 0.5s 1s linear forwards;
 }
+@keyframes showText{
+  100%{
+    opacity:1;
+  }
+}
+.skill-container .skills .progress-line{
+  position:relative;
+  height:0.625rem;
+  width:100%;
+  background:#f0f0f0;
+  box-shadow:inset 0rem 0.0625rem 0.0625rem rgba(0,0,0,0.05),
+  0rem 0.0625rem rgba(255,255,255,0.8);
+  transform-origin:left;
+  transform:scaleX(0);
+  animation : animate 1s cubic-bezier(1,0,0.5,1) forwards;
 
+
+}
+.skills .progress-line span{
+  height:100%;
+  width:80%;
+  background:blue;
+  position:absolute;
+  transform:scaleX(0);
+  transform-origin:left;
+  animation : animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+
+}
+@keyframes animate{
+  100%{
+    transform:scaleX(1)
+  }
+}
+.progress-line.javascript span{
+  width:85%;
+}
+.progress-line.angular span{
+  width:90%;
+}
+.progress-line.python span{
+  width:80%;
+}
+.progress-line.java span{
+  width:85%;
+}
+.progress-line.html span{
+  width:90%;
+}
+.skills .progress-line span::before{
+  position:absolute;
+  content:"";
+  right:0;
+  top:-0.625rem;
+  height:0;
+  width:0;
+  border:0.4375rem solid transparent;
+  border-bottom-width:0rem;
+  border-right-width:0rem;
+  border-top-color:#000;
+  opacity:0;
+  animation:showText2 0.5s 1.5s linear forwards;
+
+
+}
+.skills .progress-line span:after{
+  position:absolute;
+  content:"89%";
+  right:0;
+  top:-1.75rem;
+  color:#fff;
+  font-size:0.75rem;
+  font-weight:500;
+  background:#000;
+  padding:0.0625rem 0.5rem;
+  border-radius: 0.1875rem;
+  opacity:0;
+  animation:showText2 0.5s 1.5s linear forwards;
+
+}
+.progress-line.javascript span:after{
+  content:"85%";
+}
+.progress-line.angular span:after{
+  content:"90%";
+}
+.progress-line.python span:after{
+  content:"80%";
+}
+.progress-line.java span:after{
+  content:"85%";
+}
+.progress-line.html span:after{
+  content:"90%";
+}
+@keyframes showText2{
+  100%{
+    opacity:1;
+  }
+}
 .footer{
   display:flex;
   background:black;

@@ -3,34 +3,29 @@
   padding:0;
   box-sizing:border-box;
 }
-.breadcrumb{
+.navbar{
   width:100%;
   padding:2rem 0 2rem 0;
   background-color:black;
 }
-.breadcrumb nav ul{
+.navbar nav ul{
   display:flex;
   flex-direction:row;
   list-style:none;
 }
-.breadcrumb nav ul li a{
+.navbar nav ul li a{
   color:white;
   text-decoration:none;
   padding:1rem;
 
 }
-.breadcrumb nav ul li a:hover{
+.navbar nav ul li a:hover{
   background-color:green;
 
 }
-.breadcrumb nav ul li a.disabled{
+.navbar nav ul li a.disabled{
   color:white;
 }
-/* .breadcrumb>nav>ul>li + li:before {
-  padding:0.5rem;
-  color:white;
-  content: ">\00a0";
-} */
 #endnav{
   display:flex;
   justify-content: flex-end;
@@ -47,20 +42,16 @@
 }
 
 @media (max-width:600px){
-  .breadcrumb nav ul{
+  .navbar nav ul{
     display:flex;
     flex-direction:column;
     list-style:none;
   }
-  .breadcrumb nav ul li{
+  .navbar nav ul li{
 padding: 3%;
 
   }
-  /* .breadcrumb>nav>ul>li + li:before {
-    color:white;
-    content: "";
-    margin-left:-1em;
-  } */
+
   #endnav{
     display:flex;
     flex-direction:column;
@@ -98,6 +89,13 @@ padding: 3%;
   border-style:solid;
   padding:2em 1em 0 1em;
 }
+.container div:hover{
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+  background-color:black;
+}
+.container div p:hover{
+  color:gold;
+}
 .container div img{
   width:100%;
 }
@@ -112,7 +110,6 @@ padding: 3%;
 } 
 .videoContainer  div{
     margin-top: 5rem;
-    padding:2em 1em 0 1em;
     border-style:solid;
 }
 .videoContainer div video{

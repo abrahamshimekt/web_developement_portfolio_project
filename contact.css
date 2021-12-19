@@ -1,29 +1,18 @@
-breadcrumb{
-    background-color:black;
-    display:grid;
-    list-style:none;
+
+.breadcrumb{
+  margin-top:1rem;
   
-  
-  }
-  .breadcrumb >nav>ul {
-    grid-template-columns: 15% 15% 15% 15% 15% 15%;
-    font-size: 1rem;
-    display:flex;
-  }
-  .breadcrumb >nav> ul > li > a {
-    color:white;
-    text-decoration: none;
-  }
-  /* .breadcrumb>nav>ul>li + li:before {
-    padding:0.5rem;
-    color:white;
-    content: ">\00a0";
-  } */
-  
-  .breadcrumb > nav > ul> li a:hover {
-    color:green;
-    font-weight: bolder;
-  }
-  .breadcrumb >nav>ul>li a:disabled{
-    pointer-events: none;
-  }
+}
+.breadcrumb ul{
+  list-style:none;
+  display:flex;
+}
+.breadcrumb ul li a{
+  text-decoration:none;
+}
+.breadcrumb ul>li + li:before{
+  content:"\203a";
+  color:grey;
+  padding:0.5rem;
+
+}
