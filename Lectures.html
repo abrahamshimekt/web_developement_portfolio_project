@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lectures</title>
-  
+    <link rel="stylesheet" type="text/css" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="lectures.css" />
     <script src="https://kit.fontawesome.com/f4738e5da1.js" crossorigin="anonymous"></script>
   </head>
@@ -36,7 +36,7 @@
         
       </div>
       <div>
-        <a href="https://www.google.com"> help<i class="far fa-question-circle"></i></a>
+        <a href="https://www.google.com" > help<i class="far fa-question-circle"></i></a>
        </div>
      <div>
       <a href="https://www.google.com"> login <i class="fas fa-sign-in-alt"></i></a>
@@ -52,50 +52,104 @@
           <h2>Lectures</h2>
           <h3>what I provide</h3>
      </div>
+     <div class="lecture">
       <div class="container">
-        <div class="coll-photo">
+        <div class="coll photo">
           <img src="images/python.png" alt="python">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quaerat!</p>
-          <a href="#" class="btn btn-primary" style="border:solid">Register</a>
           <a href="#" class="card-link">Add to cart</a>
         </div>
-        <div class="coll-photo"> 
+        <div class="coll photo"> 
           <img src="images/html5.jpg" alt ="html">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quaerat!</p>
           <a href="#" class="btn btn-primary" style="border:solid">Register</a>
           <a href="#" class="card-link">Add to cart</a>
         </div>
-        <div class="coll-photo">
+        <div class="coll photo">
           <img src="images/javac.png" alt="java"/>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quaerat!</p>
-          <a href="#" class="btn btn-primary" style="border:solid">Register</a>
           <a href="#" class="card-link">Add to cart</a>
         </div>
 
+        <div class="coll photo">
+          <img src="images/javac.png" alt="java"/>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quaerat!</p>
+          <a href="#" class="card-link">Add to cart</a>
+        </div>
+
+        <div class="coll photo">
+          <img src="images/javac.png" alt="java"/>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quaerat!</p>
+          <a href="#" class="card-link">Add to cart</a>
+        </div>
+
+        <div class="coll photo">
+          <img src="images/javac.png" alt="java"/>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quaerat!</p>
+          <a href="#" class="card-link">Add to cart</a>
+        </div>
+        <i id="prev" onclick="show_image(-1)" class="fas fa-arrow-left"></i>
+        <i id="next" onclick="show_image(1)" class="fas fa-arrow-right"></i>
+
+        <div class="dots">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
       </div>
-      <div class="videoContainer">
-        <div>
+      <script src="lectures.js"></script>
+
+      <div class="videocontainer">
+        <div class="video fade">
           <video controls>
             <source src="videos/angular.mp4" type="video/mp4">
+            <track src="videos/angular.vtt" 
+            kind="captions"
+            label="english"
+            srclang="en"
+            default>
           </video>
         </div>
-          <div>
+          <div class="video fade">
             <video controls>
               <source src="videos/android.mp4" type="video/mp4">
             </video>
         </div>
-        <div>
+        <div class="video fade">
           <video controls>
             <source src="videos/flutter.mp4" type="video/mp4">
           </video>
         </div>
+        <i id="prev-v" onclick="show_video(-1)" class="fas fa-arrow-left"></i>
+        <i id="next-v" onclick="show_video(1)" class="fas fa-arrow-right"></i>
+        <div class="vdots">
+          <span class="vdot"></span>
+          <span class="vdot"></span>
+          <span class="vdot"></span>
+          <span class="vdot"></span>
+          <span class="vdot"></span>
+          <span class="vdot"></span>
+          <span class="vdot"></span>
+        </div>
       </div>
-      <div class="footer">
-        <footer>
+    </div>
+      <footer>
         <div class="footer-bottom">
+          <div>
           Created by Abraham &copy;2021 All Rights Reserved.
         </div>
-      </footer>
+        <div class="links">
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
       </div>
+      </div>
+      </footer>
   </body>
 </html>

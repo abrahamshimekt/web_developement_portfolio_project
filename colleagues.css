@@ -1,4 +1,4 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap");
 *{
   margin:0;
   padding:0;
@@ -13,11 +13,11 @@
   display:flex;
   flex-direction:row;
   list-style:none;
-  justify-content:flex-end;
 }
 .navbar nav ul li a{
   color:white;
   text-decoration:none;
+  font-family: "Poppins", sans-serif;
   padding:1rem;
 
 }
@@ -116,14 +116,25 @@ padding: 3%;
     row-gap:2rem;
   }
 }
-.footer{
+.footer-bottom {
+  background-color:rgb(27, 26, 26);
+  color: #fff;
+  padding:1rem;
   display:flex;
-  background:black;
-  color:white;
-  width:100%;
-  padding:2rem 0;
-  margin-left:0px;;
-  margin-top:20rem;
+  margin-top:10rem;
+}
+.links ul {
+  display:flex;
+
+}
+.links ul li{
+  justify-content: flex-end;
+  list-style:none;
+  padding:0 0.5rem 0 0.5rem;
+}
+.links ul li a{
+  text-decoration:none;
+  color:rgb(62, 138, 252);
 }
 
 

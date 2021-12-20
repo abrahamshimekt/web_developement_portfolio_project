@@ -162,8 +162,7 @@ body {
   width: 5rem;
   height: 2rem;
   background: white;
-  /* font-size:2rem; */
-  /* transform:skewX(-10deg); */
+  margin-top:2rem;
   cursor: pointer;
 }
 .shaky-btn:hover {
@@ -205,30 +204,23 @@ body {
   }
 
 }
-.quick-links h3 {
-  color: #fff;
-  font-size: 1em;
-}
-.quick-links ul li {
-  padding: 0.2rem;
-}
-.quick-links ul li a {
-  color: rgb(62, 138, 252);
-  text-decoration: none;
-}
-.address h3 {
-  color: white;
-}
-.address ul li {
-  padding: 0.2rem;
-  list-style: none;
-}
-.address ul li i {
-  color: white;
-}
-.address ul li {
-  color: white;
-}
 .footer-bottom {
+  background-color:rgb(27, 26, 26);
   color: #fff;
+  padding:1rem;
+  display:flex;
+  margin-top:10rem;
+}
+.links ul {
+  display:flex;
+
+}
+.links ul li{
+  justify-content: flex-end;
+  list-style:none;
+  padding:0 0.5rem 0 0.5rem;
+}
+.links ul li a{
+  text-decoration:none;
+  color:rgb(62, 138, 252);
 }

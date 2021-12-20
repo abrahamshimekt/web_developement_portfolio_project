@@ -1,150 +1,237 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.navbar{
-  width:100%;
-  padding:2rem 0 2rem 0;
-  background-color:black;
+.navbar {
+  width: 100%;
+  padding: 2rem 0 2rem 0;
+  background-color: black;
 }
-.navbar nav ul{
-  display:flex;
-  flex-direction:row;
-  list-style:none;
+.navbar nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
 }
-.navbar nav ul li a{
-  color:white;
-  text-decoration:none;
-  padding:1rem;
-
+.navbar nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
 }
-.navbar nav ul li a:hover{
-  background-color:green;
-
+.navbar nav ul li a:hover {
+  background-color: green;
 }
-.navbar nav ul li a.disabled{
-  color:white;
+.navbar nav ul li a.disabled {
+  color: white;
 }
-#endnav{
-  display:flex;
+#endnav {
+  display: flex;
   justify-content: flex-end;
-  margin-top:-1rem;
-  margin-right:5rem;
+  margin-top: -1rem;
+  margin-right: 5rem;
 }
-#endnav div{
-  padding:0 1em 0 1em;
+#endnav div {
+  padding: 0 1em 0 1em;
 }
-#endnav div a{
-  color:white;
-  text-decoration:none;
-
+#endnav div a {
+  color: white;
+  text-decoration: none;
 }
 
-@media (max-width:600px){
-  .navbar nav ul{
-    display:flex;
-    flex-direction:column;
-    list-style:none;
+@media (max-width: 600px) {
+  .navbar nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
   }
-  .navbar nav ul li{
-padding: 3%;
+  .navbar nav ul li {
+    padding: 3%;
+  }
 
+  #endnav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
   }
-
-  #endnav{
-    display:flex;
-    flex-direction:column;
-    margin-top:1em;
+  #endnav div {
+    padding: 0.5rem 2rem;
   }
-  #endnav div{
-    padding:0.5rem 2rem;
-
-  }
-  #endnav div input{
+  #endnav div input {
     border-radius: 1rem;
-    width:7rem;
+    width: 7rem;
   }
 }
 
+.service {
+  display: grid;
+  text-align: center;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 0.5rem;
+  margin-top: 10rem;
+}
+.lecture{
+display:grid;
+grid-template-columns:1fr;
+row-gap:5rem;
+}
+.container {
+  border: 0.5rem solid;
+  width: 50%;
+  height: 50vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.coll {
+  display: none;
+}
+#prev {
+  position: absolute;
+  top: 43%;
+  left: 0;
+  cursor: pointer;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+#next {
+  position: absolute;
+  cursor: pointer;
 
-.service{
-  display:grid;
-  text-align:center;
-  grid-template-rows:1fr 1fr;
-  row-gap:0.5rem;
-  margin-top:10rem;
-  
+  top: 43%;
+  right: 0;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
-.container{
-  display:grid;
-  grid-template-columns:1fr 1fr 1fr;
-  column-gap:2rem;
-  margin-left:5rem;
-  margin-right:8rem;
-
-
+#prev:hover,
+#next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
-.container div{
-  border-style:solid;
-  padding:2em 1em 0 1em;
+.dots {
+  text-align: center;
+  margin: 2%;
 }
-.container div:hover{
-  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
-  background-color:black;
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 2px;
+  transition: background-color 0.6s ease;
 }
-.container div p:hover{
-  color:gold;
+.active {
+  background-color: #717171;
 }
-.container div img{
-  width:100%;
+.photo {
+  animation: fade 1.5s;
 }
-.videoContainer{
-  display:grid;
-  grid-template-columns:1fr 1fr 1fr;
-  column-gap:2rem;
-  margin-left:5rem;
-  margin-right:8rem;
-
-
-} 
-.videoContainer  div{
-    margin-top: 5rem;
-    border-style:solid;
-}
-.videoContainer div video{
-  width:100%;
-  height:auto;
-}
-@media screen and (max-width:600px){
-  .container{
-    display:grid;
-    grid-template-columns:1fr;
-    margin-left:1rem;
-    margin-right:1rem;
-    row-gap: 5rem;
-  
+@keyframes fade {
+  from {
+    opacity: 0.4;
   }
-  .videoContainer{
-    display:grid;
-    grid-template-columns:1fr;
-    margin-left:1rem;
-    margin-right:1rem;
-  } 
-  .videoContainer div video{
-    width:100%;
-    height:auto;
+  to {
+    opacity: 1;
   }
-  
-  
 }
-footer{
-  margin:15rem 0 0 0;
-   left: 0;
-   bottom: 0;
-   padding:2rem 0 1rem 0;
-   width: 100%;
-   background-color:black;
-   color: white;
-   text-align: left;
+.video {
+  display: none;
+}
+.videocontainer {
+  border: 0.5rem solid;
+  width: 50%;
+  height: 50vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+#prev-v {
+  position: absolute;
+  top: 43%;
+  left: 0;
+  cursor: pointer;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+#next-v {
+  position: absolute;
+  cursor: pointer;
+
+  top: 43%;
+  right: 0;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+#prev-v:hover,
+#next-v:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.vdots {
+  text-align: center;
+  margin: 2%;
+}
+.vdot {
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 2px;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+.fade {
+  animation: fade 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.footer-bottom {
+  background-color: rgb(27, 26, 26);
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  margin-top: 10rem;
+}
+.links ul {
+  display: flex;
+}
+.links ul li {
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0 0.5rem 0 0.5rem;
+}
+.links ul li a {
+  text-decoration: none;
+  color: rgb(62, 138, 252);
 }
