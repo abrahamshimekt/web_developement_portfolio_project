@@ -1,181 +1,253 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap");
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
 }
-.breadcrumb{
-  width:100%;
-  padding:2rem 0 2rem 0;
-  background-color:black;
+body{
+  background-color:rgba(255,255,255,0);
 }
-.breadcrumb nav ul{
-  display:flex;
-  flex-direction:row;
-  list-style:none;
+.navbar {
+  width: 100%;
+  background: #000;
 }
-.breadcrumb nav ul li a{
-  color:white;
-  text-decoration:none;
-  padding:1rem;
+.navbar > nav ul {
+  list-style: none;
+  display: flex;
+}
+.navbar > nav > ul li {
+  align-items: center;
+  padding: 1rem 0;
+}
+.navbar > nav > ul li a {
+  color: white;
   font-family: "Poppins", sans-serif;
+  padding: 1rem;
+  font-size: 1.3em;
+  font-family: "Nunito sans";
+  text-decoration: none;
+}
+.navbar a:hover {
+  background: green;
+}
+.navbar a.disabled {
+  color: white;
+}
+#check {
+  display: none;
+}
+.checkarea {
+  background-color: black;
+  border-bottom: 2px solid white;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.checkarea label {
+  background-color: black;
+  width: 45px;
+  height: 50px;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: rotate(90deg);
+}
+.checkarea label span {
+  background-color: white;
+  height: 2px;
+  width: 40%;
+  margin: 5px 0px;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(90deg);
+}
+.checkarea {
+  display: none;
+}
+.breadcrumb {
+  margin-top: 1rem;
+}
+.breadcrumb ul {
+  list-style: none;
+  display: flex;
+}
+.breadcrumb ul li a {
+  text-decoration: none;
+}
+.breadcrumb ul > li + li:before {
+  content: "\203a";
+  color: grey;
+  padding: 0.5rem;
+}
+.header h1 h2 {
+  font-family: "Poppins", sans-serif;
+}
+.myskills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding:20px;
+  column-gap:20px;
 
 }
-.breadcrumb nav ul li a:hover{
-  background-color:green;
-
+.experience{
+  box-shadow: 0 5px 5px -5px #000000;
 }
-@media (max-width:600px){
-  .breadcrumb nav ul{
-    display:flex;
-    flex-direction:column;
-    list-style:none;
+.experience div h2 {
+  border-bottom:3px inset gold;
+  padding:4px;
+  font-family:"Poppins", sans-serif;
+}
+.experience div p{
+font-family:"lato","sans-serif";
+margin:10px 0;
+}
+.experience .btn{
+  padding:5px;
+  background-color:rgba(0,255,0,1);
+}
+.skill-container {
+  grid-column: 2;
+  box-shadow: 0.325rem 0.325rem 0.65rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.625rem;
+  padding: 1.5625rem 1.875rem;
+}
+.skill-container .skills {
+  margin: 1.25rem 0;
+}
+.skill-container .skills:first-child {
+  margin-top: 0rem;
+}
+.skill-container .skills .skill span {
+  font-family:"Lato", sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+  100% {
+    opacity: 1;
   }
-  .breadcrumb nav ul li{
-padding: 3%;
-
+}
+.skill-container .skills .progress-line {
+  position: relative;
+  height: 0.625rem;
+  width: 100%;
+  background: #f0f0f0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
+    0px 1px rgba(255, 255, 255, 0.8);
+  transform-origin: left;
+  transform: scaleX(0);
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+.skills .progress-line span {
+  height: 100%;
+  width: 80%;
+  background: blue;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
   }
 }
-.myskills{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-
+.progress-line.javascript span {
+  width: 85%;
 }
-.skill-container{
-  grid-column:2;
-  box-shadow:0.325rem 0.325rem 0.650rem rgba(0,0,0,0.2);
-  border-radius:0.625rem;
-  padding:1.5625rem 1.875rem;
-
+.progress-line.angular span {
+  width: 90%;
 }
-.skill-container .skills{
-  margin:1.25rem 0;
+.progress-line.python span {
+  width: 80%;
 }
-.skill-container .skills:first-child{
-  margin-top:0rem
+.progress-line.java span {
+  width: 85%;
 }
-.skill-container .skills .skill span{
-  font-size:1.0625rem;
-  font-weight:500;
-  opacity:0;
-  animation:showText 0.5s 1s linear forwards;
+.progress-line.html span {
+  width: 90%;
 }
-@keyframes showText{
-  100%{
-    opacity:1;
-  }
+.skills .progress-line span::before {
+  position: absolute;
+  top: -10px;
+  height: 0;
+  width: 0;
+  border: 0.4375rem solid transparent;
+  border-bottom-width: 0rem;
+  border-right-width: 0rem;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
 }
-.skill-container .skills .progress-line{
-  position:relative;
-  height:0.625rem;
-  width:100%;
-  background:#f0f0f0;
-  box-shadow:inset 0rem 0.0625rem 0.0625rem rgba(0,0,0,0.05),
-  0rem 0.0625rem rgba(255,255,255,0.8);
-  transform-origin:left;
-  transform:scaleX(0);
-  animation : animate 1s cubic-bezier(1,0,0.5,1) forwards;
-
-
-}
-.skills .progress-line span{
-  height:100%;
-  width:80%;
-  background:blue;
-  position:absolute;
-  transform:scaleX(0);
-  transform-origin:left;
-  animation : animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
-
-}
-@keyframes animate{
-  100%{
-    transform:scaleX(1)
-  }
-}
-.progress-line.javascript span{
-  width:85%;
-}
-.progress-line.angular span{
-  width:90%;
-}
-.progress-line.python span{
-  width:80%;
-}
-.progress-line.java span{
-  width:85%;
-}
-.progress-line.html span{
-  width:90%;
-}
-.skills .progress-line span::before{
-  position:absolute;
-  content:"";
-  right:0;
-  top:-0.625rem;
-  height:0;
-  width:0;
-  border:0.4375rem solid transparent;
-  border-bottom-width:0rem;
-  border-right-width:0rem;
-  border-top-color:#000;
-  opacity:0;
-  animation:showText2 0.5s 1.5s linear forwards;
-
-
-}
-.skills .progress-line span:after{
-  position:absolute;
-  content:"89%";
-  right:0;
-  top:-1.75rem;
-  color:#fff;
-  font-size:0.75rem;
-  font-weight:500;
-  background:#000;
-  padding:0.0625rem 0.5rem;
+.skills .progress-line span:after {
+  position: absolute;
+  content: "89%";
+  right: 0;
+  top: -1.75rem;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background: #000;
+  padding: 1px 0.5rem;
   border-radius: 0.1875rem;
-  opacity:0;
-  animation:showText2 0.5s 1.5s linear forwards;
-
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
 }
-.progress-line.javascript span:after{
-  content:"85%";
+.progress-line.javascript span:after {
+  content: "85%";
 }
-.progress-line.angular span:after{
-  content:"90%";
+.progress-line.angular span:after {
+  content: "90%";
 }
-.progress-line.python span:after{
-  content:"80%";
+.progress-line.python span:after {
+  content: "80%";
 }
-.progress-line.java span:after{
-  content:"85%";
+.progress-line.java span:after {
+  content: "85%";
 }
-.progress-line.html span:after{
-  content:"90%";
+.progress-line.html span:after {
+  content: "90%";
 }
-@keyframes showText2{
-  100%{
-    opacity:1;
+@keyframes showText2 {
+  100% {
+    opacity: 1;
   }
 }
 .footer-bottom {
-  background-color:rgb(27, 26, 26);
+  background-color: rgb(27, 26, 26);
   color: #fff;
-  padding:1rem;
-  display:flex;
-  margin-top:10rem;
+  padding: 1rem;
+  display: flex;
+  margin-top: 10rem;
 }
-.links ul {
-  display:flex;
+@media screen and (max-width: 600px) {
+  .navbar nav ul {
+    flex-direction: column;
+    display: none;
+  }
+  #check:checked + .navbar nav ul {
+    display: flex;
+  }
+  .checkarea {
+    display: flex;
+  }
+  .myskills {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    padding:20px;
+  
+  }
+  .skill-container {
+    grid-column: 1;
+    box-shadow: 0.325rem 0.325rem 0.65rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.625rem;
+  }
+}
 
-}
-.links ul li{
-  justify-content: flex-end;
-  list-style:none;
-  padding:0 0.5rem 0 0.5rem;
-}
-.links ul li a{
-  text-decoration:none;
-  color:rgb(62, 138, 252);
-}

@@ -15,13 +15,13 @@
       <span>-</span>
       <span>-</span>
       <span>-</span>
-      <label>
+    </label>
     </div>
       <input type="checkbox" id="check">
     <div class="navbar">
       <nav>
         <ul>
-          <li ><a href="Home.html" class="disabled">Home</a></li>
+          <li ><a href="Home.html">Home</a></li>
           <li ><a href="skills.html">Skills</a></li>
           <li ><a href="Lectures.html">Lectures</a></li>
           <li ><a href="Colleagues.html">Colleagues</a></li>
@@ -48,23 +48,21 @@
   </div>
   <div class="container">
     <div class="address">
-    <ul>
-      <div>
-      <p>Name</p>
+      <div class="addresstype">
+      <img src="images/abrish.jpg" alt="Abrham shimekt">
       <p>Abraham Shimekt</p>
-      <img src="images/abrish.jpg" alt="Abraham">
      </div>
-     <div>
-      <p>Address</p>
-      <li><i class="fa fa-map-marker" aria-hidden="true"></i>Butajira,01</li>
+     <div class="addresstype">
+      <i class="fa fa-map-marker" aria-hidden="true"></i>
+      <p>Butajira,01</p> 
       </div>
-      <div>
-      <p>Phone</p>
-      <li><i class="fa fa-phone" aria-hidden="true"></i>25167233553</li>
+      <div class="addresstype">
+      <i class="fa fa-phone" aria-hidden="true"></i>
+      <p>+25167233553</p>
     </div>
-    <div>
-      <p>Email</p>
-      <li><i class="fa fa-envelope" aria-hidden="true"></i>shimektabraham@gmail.com</li>
+    <div class="addresstype">
+      <i class="fa fa-envelope" aria-hidden="true"></i>
+      <p>shimektabraham@gmail.com</p>
     </div>
     </ul>
   </div>
@@ -72,11 +70,18 @@
     <div class="contact-box">
       <div class="left"></div>
         <div class="right">
-          <input type="text" class="field" placeholder="your name">
-          <input type="email" class="field" placeholder="your email">
-          <input type="text" class="field" placeholder="subject">
-          <textarea class="field area" placeholder="message"></textarea>
+          <form action="">
+            <label for="your-name">Name</label>
+          <input type="text" id="your-name" class="field" placeholder="your name">
+          <label for="your-email">email</label>
+          <input type="email"id="your-email" class="field" placeholder="your email">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" class="field" placeholder="subject">
+          <label for="message">Message</label>
+          <textarea class="field area" id ="message" placeholder="message"></textarea>
           <button class="btn">Send</button>
+   
+        </form>
       </div>
     </div>
   </div>
@@ -88,14 +93,6 @@
       <div>
       Created by Abraham &copy;2021 All Rights Reserved.
     </div>
-    <div class="links">
-    <ul>
-      <li><a href="Home.html">Home</a></li>
-      <li><a href="About.html">About</a></li>
-      <li><a href="Contact.html">Contact</a></li>
-    </ul>
-  </div>
-  </div>
   </footer>        
 </body>
 </html>

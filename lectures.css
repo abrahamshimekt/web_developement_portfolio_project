@@ -1,67 +1,88 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap");
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0rem;
+  padding: 0rem;
   box-sizing: border-box;
+}
+body {
+  background: rgba(255, 255, 255, 0);
 }
 .navbar {
   width: 100%;
-  padding: 2rem 0 2rem 0;
-  background-color: black;
+  background: #000;
 }
-.navbar nav ul {
-  display: flex;
-  flex-direction: row;
+.navbar > nav ul {
   list-style: none;
+  display: flex;
+  justify-content: flex-start;
 }
-.navbar nav ul li a {
+.navbar > nav > ul li {
+  align-items: center;
+  padding: 1rem 0;
+}
+.navbar > nav > ul li a {
   color: white;
-  text-decoration: none;
-  padding: 1rem;
   font-family: "Poppins", sans-serif;
+  padding: 1rem;
+  font-size: 1.3em;
+  font-family: "Nunito sans";
+  text-decoration: none;
 }
-.navbar nav ul li a:hover {
-  background-color: green;
+.navbar a:hover {
+  background: green;
 }
-.navbar nav ul li a.disabled {
+.navbar a.disabled {
   color: white;
 }
-#endnav {
+#check {
+  display: none;
+}
+.checkarea {
+  background-color: black;
+  border-bottom: 2px solid white;
+  color: white;
+  padding: 10px;
   display: flex;
   justify-content: flex-end;
-  margin-top: -1rem;
-  margin-right: 5rem;
 }
-#endnav div {
-  padding: 0 1em 0 1em;
-}
-#endnav div a {
+.checkarea label {
+  background-color: black;
+  width: 45px;
+  height: 50px;
   color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: rotate(90deg);
+}
+.checkarea label span {
+  background-color: white;
+  height: 2px;
+  width: 40%;
+  margin: 5px 0px;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(90deg);
+}
+.checkarea {
+  display: none;
+}
+.breadcrumb {
+  margin-top: 1rem;
+}
+.breadcrumb ul {
+  list-style: none;
+  display: flex;
+}
+.breadcrumb ul li a {
   text-decoration: none;
 }
-
-@media (max-width: 600px) {
-  .navbar nav ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-  }
-  .navbar nav ul li {
-    padding: 3%;
-  }
-
-  #endnav {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1em;
-  }
-  #endnav div {
-    padding: 0.5rem 2rem;
-  }
-  #endnav div input {
-    border-radius: 1rem;
-    width: 7rem;
-  }
+.breadcrumb ul > li + li:before {
+  content: "\203a";
+  color: grey;
+  padding: 0.5rem;
 }
 
 .service {
@@ -71,10 +92,10 @@
   row-gap: 0.5rem;
   margin-top: 10rem;
 }
-.lecture{
-display:grid;
-grid-template-columns:1fr;
-row-gap:5rem;
+.lecture {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 5rem;
 }
 .container {
   border: 0.5rem solid;
@@ -87,8 +108,10 @@ row-gap:5rem;
   flex-direction: column;
   position: relative;
 }
-.coll {
-  display: none;
+.container .coll img {
+  width: 30%;
+  height: 85%;
+  margin: 0 10rem 30px 10rem;
 }
 #prev {
   position: absolute;
@@ -149,10 +172,14 @@ row-gap:5rem;
 .video {
   display: none;
 }
+.videocontainer .video video {
+  width: 85%;
+  height: 90%;
+}
 .videocontainer {
   border: 0.5rem solid;
   width: 50%;
-  height: 50vh;
+  height: 20em;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -160,7 +187,7 @@ row-gap:5rem;
   flex-direction: column;
   position: relative;
 }
-#prev-v {
+#prev_v {
   position: absolute;
   top: 43%;
   left: 0;
@@ -172,10 +199,9 @@ row-gap:5rem;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-#next-v {
+#next_v {
   position: absolute;
   cursor: pointer;
-
   top: 43%;
   right: 0;
   padding: 16px;
@@ -185,8 +211,8 @@ row-gap:5rem;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-#prev-v:hover,
-#next-v:hover {
+#prev_v:hover,
+#next_v:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .vdots {
@@ -206,9 +232,9 @@ row-gap:5rem;
   background-color: #717171;
 }
 .fade {
-  animation: fade 1.5s;
+  animation: fadeout 1.5s;
 }
-@keyframes fade {
+@keyframes fadeout {
   from {
     opacity: 0.4;
   }
@@ -234,4 +260,51 @@ row-gap:5rem;
 .links ul li a {
   text-decoration: none;
   color: rgb(62, 138, 252);
+}
+@media screen and (max-width: 700px) {
+  .navbar nav ul {
+    flex-direction: column;
+    display: none;
+  }
+  #check:checked + .navbar nav ul {
+    display: flex;
+  }
+  .checkarea {
+    display: flex;
+  }
+  .container {
+    border: 0.2rem solid;
+    width: 90%;
+    height: 40vh;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  .videocontainer {
+    border: 0.2rem solid;
+    width: 90%;
+    height: 30vh;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .container .coll img {
+    width: 40%;
+    height: 70%;
+    margin: 0 1rem 3rem 6rem;
+  }
+  .videocontainer .video video {
+    width: 90%;
+    height: 100%;
+  }
+  .lecture {
+    display: grid;
+    row-gap: 2rem;
+    margin: 1rem 3rem;
+  }
 }

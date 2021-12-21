@@ -4,6 +4,9 @@
   padding: 0rem;
   box-sizing: border-box;
 }
+body{
+  background-color:rgba(255,255,255,0);
+}
 .navbar {
   width: 100%;
   background: #000;
@@ -66,18 +69,6 @@
 .checkarea {
   display: none;
 }
-@media screen and (max-width: 600px) {
-  .navbar nav ul {
-    flex-direction: column;
-    display: none;
-  }
-  #check:checked + .navbar nav ul {
-    display: flex;
-  }
-  .checkarea {
-    display: flex;
-  }
-}
 .breadcrumb{
   margin-top:1rem;
   
@@ -100,16 +91,41 @@
   grid-template-columns:1fr;
   row-gap:1rem;
   margin-top:5em;
+  padding:50px;
 }
 #in-touch div h1{
-  margin-left:1.4rem;
+  margin-left:2rem;
 }
 
 .container{
   display:grid;
   grid-template-columns:1fr 1fr;
+  column-gap:0.5rem;
   margin-top:6.353rem;
+  padding:10px;
 
+}
+.address{
+  max-width:300px;
+  display:grid;
+  padding:10px;
+  grid-template-rows:repeat(4,1fr);
+  align-items:center;
+  text-align:center;
+  text-align:center;
+  background-color:#fff;
+  box-shadow: 0 5px 5px -5px #000000;
+ 
+}
+.addresstype p{
+  margin-top:0.89rem;
+  font-family: "Poppins", sans-serif;
+  font-size:15px;
+  box-shadow:0 0.5px 0.5px rgba(0,255,0,1);
+}
+.addresstype i{
+  font-size:30px;
+  color:blue;
 }
 
 .contact-form{
@@ -130,7 +146,6 @@
   top:0;
   width:100%;
   height:100%;
-  background:url(ximages/formbg.jpg) no-repeat center;
   background-size:cover;
   z-index:-1;
   filter:blur(50px);
@@ -192,6 +207,16 @@
 
 }
 @media screen and (max-width:600px){
+  .navbar nav ul {
+    flex-direction: column;
+    display: none;
+  }
+  #check:checked + .navbar nav ul {
+    display: flex;
+  }
+  .checkarea {
+    display: flex;
+  }
   .container{
     display:grid;
     grid-template-columns:1fr;
@@ -203,18 +228,31 @@
   .left{
     height:200px;
   }
+  .addresstype p{
+    margin-top:0.5rem;
+    font-family: "Poppins", sans-serif;
+    font-size:20px;
+  }
+  .addresstype i{
+    font-size:30px;
+    color:blue;
+  }
+  .addresstype img{
+    width:15%;
+  }
+  .address{
+    row-gap:5px;
+  }
+
 }
-.address{
-  display:grid;
-  grid-template-rows:1fr 1fr 1fr 1fr;
-  row-gap:1rem;
-}
+
 .footer-bottom {
   background-color:rgb(27, 26, 26);
   color: #fff;
   padding:1rem;
   display:flex;
   margin-top:10rem;
+  font-family: "Poppins", sans-serif;
 }
 .links ul {
   display:flex;

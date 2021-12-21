@@ -3,6 +3,10 @@
   margin: 0rem;
   padding: 0rem;
   box-sizing: border-box;
+  background: rgba(0, 0, 0, 0);
+}
+body{
+  background-color:rgba(255,255,255,0);
 }
 .navbar {
   width: 100%;
@@ -65,7 +69,57 @@
 .checkarea {
   display: none;
 }
-@media screen and (max-width: 600px) {
+.breadcrumb {
+  margin-top: 1rem;
+}
+.breadcrumb ul {
+  list-style: none;
+  display: flex;
+}
+.breadcrumb ul li a {
+  text-decoration: none;
+}
+.breadcrumb ul > li + li:before {
+  content: "\203a";
+  color: grey;
+  padding: 0.5rem;
+}
+
+.about_me {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 3rem;
+  margin-top: 10rem;
+  padding:60px;
+  justify-content: center;
+}
+.who h1 h2 {
+  font-family: "Poppins", sans-serif;
+}
+.who{
+  margin-top:4.3rem;
+}
+
+.content-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.content-table td,
+.content-table th {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 16px;
+}
+.content-table th {
+  background-color: darkblue;
+  color: #fff;
+}
+.content-table tbody tr:nth-child(even){
+  background-color:lawngreen;
+}
+
+@media (max-width: 600px) {
   .navbar nav ul {
     flex-direction: column;
     display: none;
@@ -76,105 +130,68 @@
   .checkarea {
     display: flex;
   }
-}
-
-.about-me{
-  display:grid;
-  grid-template-columns:1fr;
-  row-gap:3rem;
-  margin-top:10rem;
-  padding:5rem;
-
-}
-.who h1 h2{
-  font-family:"Poppins", sans-serif;
-
-}
-.about-me div img{
-  display:block;
-  width:100%;
-  border:0.5rem olive;
-  object-fit:fill;
-}
-.content-table{
-  width:100%;
-  border-collapse:collapse;
-}
-.content-table td,.content-table th{
-  padding:12px 15px;
-  border:1px solid #ddd;
-  text-align:center;
-  font-size:16px;
-}
-.content-table th{
-  background-color:darkblue;
-  color:#fff;
-}
-.content-table tbody tr:nth-child(even){
-  background-color:#f5f5;
-}
-@media(max-width:600px){
-  .content-table thead{
-    display:none;
+  .about_me {
+    display: grid;
+    margin-top: 10rem;
+    padding:10px;
+    justify-content: center;
   }
-  .content-table,.content-table tbody,.content-table tr,.content-table td{
-    display:block;
+  .about_me img {
+    width:100%;
+    object-fit: cover;
+  }
+  .about_me .my_desc{
     width:100%;
   }
-  .content-table tr{
-    margin-bottom:15px;
+  .content-table table{
+    width:100%;
   }
-  .content-table td{
-    text-align:right;
-    padding-left:50%;
-    text-align:right;
-    position:relative;
+  .content-table thead {
+    display: none;
   }
-  .content-table td::before{
-    content:attr(data-label);
-    position:absolute;
-    left:0;
-    width:50%;
-    padding-left:15px;
-    font-size:15px;
-    font-weight:bold;
-    text-align:left;
+  .content-table,
+  .content-table tbody,
+  .content-table tr,
+  .content-table td {
+    display: block;
+    width:100%;
   }
-}
-.footer-start {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 10rem;
-  margin-bottom: 1rem;
-}
-@media screen and (max-width: 600px) {
+  .content-table 
+  .content-table tr {
+    margin-bottom: 15px;
+  }
+  .content-table tbody tr:nth-child(even){
+    background-color:lawngreen;
+  }
+  .content-table td {
+    text-align: right;
+    padding-left: 50%;
+    text-align: right;
+    position: relative;
+  }
+  .content-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
   .footer-start {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
-    align-items:center;
-    margin-left:8rem;
+    align-items: center;
+    margin-left: 8rem;
     row-gap: 2rem;
   }
-
 }
 .footer-bottom {
-  background-color:rgb(27, 26, 26);
+  background-color: rgb(27, 26, 26);
   color: #fff;
-  padding:1rem;
-  display:flex;
-  margin-top:10rem;
-}
-.links ul {
-  display:flex;
-
-}
-.links ul li{
-  justify-content: flex-end;
-  list-style:none;
-  padding:0 0.5rem 0 0.5rem;
-}
-.links ul li a{
-  text-decoration:none;
-  color:rgb(62, 138, 252);
+  padding: 1rem;
+  display: flex;
+  margin-top: 10rem;
 }
