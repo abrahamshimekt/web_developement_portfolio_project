@@ -2,7 +2,7 @@ var index = 0;
 show_image(index);
 function show_image(i) {
   index += i;
-  var images = document.getElementsByClassName("coll");
+  var images = document.getElementsByClassName("course");
   var dots = document.getElementsByClassName("dot");
   for (i = 0; i < images.length; i++) {
     images[i].style.display = "none";
@@ -16,7 +16,7 @@ function show_image(i) {
   if (index < 0) {
     index = images.length - 1;
   }
-  images[index].style.display = "block";
+  images[index].style.display = "flex";
   dots[index].className += "active";
 }
 
@@ -38,6 +38,6 @@ function show_video(j) {
   if (index_vid < 0) {
     index_vid = videos.length - 1;
   }
-  videos[index_vid].style.display = "block";
+  videos[index_vid].style.display = "flex";
   vdots[index_vid].className += "active";
 }

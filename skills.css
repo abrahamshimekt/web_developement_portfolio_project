@@ -104,10 +104,12 @@ body{
 .experience div p{
 font-family:"lato","sans-serif";
 margin:10px 0;
+padding:20px;
 }
 .experience .btn{
-  padding:5px;
   background-color:rgba(0,255,0,1);
+  padding:10px;
+  margin-left:20px;
 }
 .skill-container {
   grid-column: 2;

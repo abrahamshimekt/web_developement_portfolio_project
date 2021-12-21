@@ -69,29 +69,16 @@ body {
 .checkarea {
   display: none;
 }
-@media screen and (max-width: 600px) {
-  .navbar nav ul {
-    flex-direction: column;
-    display: none;
-  }
-  #check:checked + .navbar nav ul {
-    display: flex;
-  }
-  .checkarea {
-    display: flex;
-  }
-}
+
 
 .profile {
   display: grid;
   grid-template-columns: 30% 40%;
-  grid-row-gap: 2rem;
   grid-column-gap: 2px;
-  margin-top: 10rem;
 }
 .social a i {
   width: 100%;
-  color: white;
+  color: black;
   height: auto;
   object-fit: cover;
   padding: 0.5rem;
@@ -191,13 +178,33 @@ body {
   margin-top: 10rem;
   margin-bottom: 1rem;
 }
+.footer-bottom {
+  background-color: rgb(27, 26, 26);
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  margin-top: 10rem;
+}
 @media screen and (max-width: 600px) {
+  .navbar nav ul {
+    flex-direction: column;
+    display: none;
+  }
+  #check:checked + .navbar nav ul {
+    display: flex;
+  }
+  .checkarea {
+    display: flex;
+  }
   .name img {
     width: 50%;
     height: auto;
     object-fit: cover;
     border-radius: 30rem;
     margin-left: 5rem;
+  }
+  .name h2{
+    
   }
   .profile {
     display: grid;
@@ -211,12 +218,14 @@ body {
     font-family: "Lato", sans-serif;
     margin: 0 10px;
     font-size: 23px;
+    padding:5px;
   }
+
   .shaky-btn {
     width: 5rem;
     height: 2rem;
     background: white;
-    margin-top: 2rem;
+    margin-top: 1rem;
     cursor: pointer;
     margin-left: 6rem;
   }
@@ -228,23 +237,4 @@ body {
     margin-left: 8rem;
     row-gap: 2rem;
   }
-}
-.footer-bottom {
-  background-color: rgb(27, 26, 26);
-  color: #fff;
-  padding: 1rem;
-  display: flex;
-  margin-top: 10rem;
-}
-.links ul {
-  display: flex;
-}
-.links ul li {
-  justify-content: flex-end;
-  list-style: none;
-  padding: 0 0.5rem 0 0.5rem;
-}
-.links ul li a {
-  text-decoration: none;
-  color: rgb(62, 138, 252);
 }

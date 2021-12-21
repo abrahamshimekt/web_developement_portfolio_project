@@ -172,6 +172,9 @@ body{
 .right{
   padding:25px 40px;
 }
+.right label{
+  font-family:"Poppins", "sans-serif" ;
+}
 .field{
   width:100%;
   padding:0.5rem 1rem;
@@ -253,17 +256,4 @@ body{
   display:flex;
   margin-top:10rem;
   font-family: "Poppins", sans-serif;
-}
-.links ul {
-  display:flex;
-
-}
-.links ul li{
-  justify-content: flex-end;
-  list-style:none;
-  padding:0 0.5rem 0 0.5rem;
-}
-.links ul li a{
-  text-decoration:none;
-  color:rgb(62, 138, 252);
 }

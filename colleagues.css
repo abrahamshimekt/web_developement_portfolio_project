@@ -68,18 +68,6 @@ body{
 .checkarea {
   display: none;
 }
-@media screen and (max-width: 600px) {
-  .navbar nav ul {
-    flex-direction: column;
-    display: none;
-  }
-  #check:checked + .navbar nav ul {
-    display: flex;
-  }
-  .checkarea {
-    display: flex;
-  }
-}
 .breadcrumb {
   margin-top: 1rem;
 }
@@ -87,7 +75,11 @@ body{
   list-style: none;
   display: flex;
 }
+.breadcrumb ul li{
+  font-family:"Poppins","sans-serif";
+}
 .breadcrumb ul li a {
+  font-family:"Poppins","sans-serif";
   text-decoration: none;
 }
 .breadcrumb ul > li + li:before {
@@ -102,6 +94,26 @@ body{
   justify-content: center;
   margin-top: 5rem;
   box-shadow: inset 1rem rgba(0, 0, 0, 0.5);
+}
+.sup{
+  position:relative;
+  font-family:"Poppins","sans-serif";
+}
+.sup::after{
+  content:"";
+  height:2px;
+  width:9%;
+  background:#f24432;
+  position:absolute;
+  left:0;
+  bottom:0;
+}
+.container h4{
+  font-family:"Poppins","sans-serif";
+
+}
+.container P{
+    font-family:"lato","sans-serif";
 }
 .coll {
   display: grid;
@@ -119,13 +131,6 @@ body{
 .container {
   padding: 3fr 1fr;
 }
-@media (max-width: 600px) {
-  .coll {
-    display: grid;
-    grid-template-columns: 1fr;
-    column-gap: 2rem;
-  }
-}
 
 .companies {
   display: grid;
@@ -142,10 +147,38 @@ body{
   height: auto;
 }
 @media screen and (max-width: 600px) {
+  .navbar nav ul {
+    flex-direction: column;
+    display: none;
+  }
+  #check:checked + .navbar nav ul {
+    display: flex;
+  }
+  .checkarea {
+    display: flex;
+  }
+  .coll {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2rem;
+  }
   .companies {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 2rem;
+  }
+  .sup{
+    position:relative;
+    font-family:"Poppins","sans-serif";
+  }
+  .sup::after{
+    content:"";
+    height:2px;
+    width:28.2%;
+    background:#f24432;
+    position:absolute;
+    left:0;
+    bottom:0;
   }
 }
 .footer-bottom {
@@ -154,16 +187,4 @@ body{
   padding: 1rem;
   display: flex;
   margin-top: 10rem;
-}
-.links ul {
-  display: flex;
-}
-.links ul li {
-  justify-content: flex-end;
-  list-style: none;
-  padding: 0 0.5rem 0 0.5rem;
-}
-.links ul li a {
-  text-decoration: none;
-  color: rgb(62, 138, 252);
 }

@@ -91,27 +91,36 @@ body {
   grid-template-rows: 1fr 1fr;
   row-gap: 0.5rem;
   margin-top: 10rem;
+  margin-bottom:10px;
+  font-family: "Poppins","sans-serif";
 }
-.lecture {
+.lectures {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 5rem;
+  margin-top:5rem;
+  row-gap: 40px;
+  padding:20px;
+}
+.container .course img{
+  width: 100%;
+  height: 100%;
+ 
+}
+.container .course div{
+  padding:90px;
+  border: 3px inset;
+  margin:10px;
 }
 .container {
-  border: 0.5rem solid;
-  width: 50%;
-  height: 50vh;
+  padding:20px;
+  width: 95%;
+  height: 30vw;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: relative;
-}
-.container .coll img {
-  width: 30%;
-  height: 85%;
-  margin: 0 10rem 30px 10rem;
 }
 #prev {
   position: absolute;
@@ -120,7 +129,7 @@ body {
   cursor: pointer;
   padding: 16px;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.5rem;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -128,12 +137,11 @@ body {
 #next {
   position: absolute;
   cursor: pointer;
-
   top: 43%;
   right: 0;
   padding: 16px;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.5rem;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -158,10 +166,10 @@ body {
 .active {
   background-color: #717171;
 }
-.photo {
-  animation: fade 1.5s;
+.item {
+  animation: fadeout 1.5s;
 }
-@keyframes fade {
+@keyframes fadeout {
   from {
     opacity: 0.4;
   }
@@ -169,17 +177,20 @@ body {
     opacity: 1;
   }
 }
-.video {
-  display: none;
-}
 .videocontainer .video video {
-  width: 85%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
+ 
+}
+.videocontainer .video div{
+  padding:10px;
+  border: 3px inset;
+  margin:10px;
 }
 .videocontainer {
-  border: 0.5rem solid;
-  width: 50%;
-  height: 20em;
+  padding:0 20px 10px;
+  width: 95%;
+  height: 30vw;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -187,6 +198,7 @@ body {
   flex-direction: column;
   position: relative;
 }
+
 #prev_v {
   position: absolute;
   top: 43%;
@@ -194,7 +206,7 @@ body {
   cursor: pointer;
   padding: 16px;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.5rem;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -206,7 +218,7 @@ body {
   right: 0;
   padding: 16px;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.5rem;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -249,19 +261,9 @@ body {
   display: flex;
   margin-top: 10rem;
 }
-.links ul {
-  display: flex;
-}
-.links ul li {
-  justify-content: flex-end;
-  list-style: none;
-  padding: 0 0.5rem 0 0.5rem;
-}
-.links ul li a {
-  text-decoration: none;
-  color: rgb(62, 138, 252);
-}
+
 @media screen and (max-width: 700px) {
+
   .navbar nav ul {
     flex-direction: column;
     display: none;
@@ -272,10 +274,12 @@ body {
   .checkarea {
     display: flex;
   }
+  .lectures{
+    overflow:scroll;
+  }
   .container {
-    border: 0.2rem solid;
-    width: 90%;
-    height: 40vh;
+    width: 100%;
+    height: 200px;
     margin: 20px;
     display: flex;
     justify-content: center;
@@ -284,25 +288,24 @@ body {
     position: relative;
   }
   .videocontainer {
-    border: 0.2rem solid;
-    width: 90%;
-    height: 30vh;
+    width: 100%;
+    height: 300px;
     margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
   }
-  .container .coll img {
+  .container .course img {
     width: 40%;
-    height: 70%;
-    margin: 0 1rem 3rem 6rem;
+    height: 50%;
+    object-fit:cover;
   }
   .videocontainer .video video {
-    width: 90%;
+    width: 100%;
     height: 100%;
   }
-  .lecture {
+  .lectures {
     display: grid;
     row-gap: 2rem;
     margin: 1rem 3rem;
