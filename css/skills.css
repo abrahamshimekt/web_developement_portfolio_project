@@ -24,7 +24,6 @@ body{
   font-family: "Poppins", sans-serif;
   padding: 1rem;
   font-size: 1.3em;
-  font-family: "Nunito sans";
   text-decoration: none;
 }
 .navbar a:hover {
@@ -83,9 +82,13 @@ body{
   color: grey;
   padding: 0.5rem;
 }
+.header{
+justify-content: center;
+}
 .header h1 h2 {
   font-family: "Poppins", sans-serif;
 }
+
 .myskills {
   display: grid;
   grid-template-columns: 1fr 1fr;

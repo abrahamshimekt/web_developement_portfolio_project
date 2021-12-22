@@ -25,7 +25,6 @@ body {
   font-family: "Poppins", sans-serif;
   padding: 1rem;
   font-size: 1.3em;
-  font-family: "Nunito sans";
   text-decoration: none;
 }
 .navbar a:hover {
@@ -84,7 +83,9 @@ body {
   color: grey;
   padding: 0.5rem;
 }
-
+.endnav{
+  
+}
 .service {
   display: grid;
   text-align: center;
@@ -297,17 +298,29 @@ body {
     position: relative;
   }
   .container .course img {
-    width: 40%;
+    width: 70%;
     height: 50%;
     object-fit:cover;
   }
+  
   .videocontainer .video video {
     width: 100%;
     height: 100%;
   }
   .lectures {
     display: grid;
-    row-gap: 2rem;
+    row-gap: 10rem;
     margin: 1rem 3rem;
+  }
+  .title{
+    width:100%;
+    margin:5px;
+    padding:5px;
+    border-bottom:1px solid;
+  }
+  .desc{
+    width:100%;
+    padding:10px;
+    font-size:20px;
   }
 }
