@@ -1,3 +1,4 @@
-# personal_portfolio
+# Personal Portfolio and Profile page
+Name:Abraham Shimekt
+ID: UGR/0129/12
 
-This is my personal portfolio website that presents who I am and my skill and experiences.
