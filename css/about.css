@@ -5,8 +5,8 @@
   box-sizing: border-box;
   background: rgba(0, 0, 0, 0);
 }
-body{
-  background-color:rgba(255,255,255,0);
+body {
+  background-color: rgba(255, 255, 255, 0);
 }
 .navbar {
   width: 100%;
@@ -75,7 +75,7 @@ body{
   list-style: none;
   display: flex;
 }
-.breadcrumb ul li{
+.breadcrumb ul li {
   font-family: "Poppins", sans-serif;
 }
 .breadcrumb ul li a {
@@ -90,23 +90,22 @@ body{
 
 .about_me {
   display: grid;
-  grid-template-columns:1fr;
+  grid-template-columns: 1fr;
   row-gap: 3rem;
-  width:100%;
-  padding:100px 200px;
-
+  width: 100%;
+  padding: 100px 200px;
 }
-.my_photo{
-  width:100%;
+.my_photo {
+  width: 100%;
   border-radius: 50%;
   padding-left: 130px;
 }
 .who h1 h2 {
   font-family: "Poppins", sans-serif;
 }
-.who{
-  margin-left:500px;
-  margin-top:30px;
+.who {
+  margin-left: 500px;
+  margin-top: 30px;
 }
 /* .who h2:before{
   content:"";
@@ -130,9 +129,9 @@ body{
     top:31%;
     z-index:-2;
     } */
-.my_desc{
-  width:100%;
-  padding:20px;
+.my_desc {
+  width: 100%;
+  padding: 20px;
   box-shadow: 0 3px 5px -5px #000000;
 }
 
@@ -151,28 +150,26 @@ body{
   background-color: darkblue;
   color: #fff;
 }
-.content-table tbody tr:nth-child(even){
-  background-color:#B5651D;
+.content-table tbody tr:nth-child(even) {
+  background-color: #b5651d;
 }
-@media(min-width:1280px){
+@media (min-width: 1280px) {
   .about_me {
     display: grid;
-    grid-template-columns:1fr;
+    grid-template-columns: 1fr;
     row-gap: 3rem;
-    width:100%;
-    padding:100px 300px;
-  
+    width: 100%;
+    padding: 100px 300px;
   }
-  .my_photo{
-    width:100%;
+  .my_photo {
+    width: 100%;
     padding-left: 130px;
   }
-  .my_desc{
-   width:92%;
-    padding:20px;
+  .my_desc {
+    width: 92%;
+    padding: 20px;
     box-shadow: 0 3px 5px -5px #000000;
   }
-
 }
 
 @media (max-width: 600px) {
@@ -189,26 +186,25 @@ body{
   .about_me {
     display: grid;
     margin-top: 10rem;
-    padding:10px;
+    padding: 10px;
     justify-content: center;
   }
-  .who{
-    margin-left:120px;
-    margin-top:50px;
+  .who {
+    margin-left: 120px;
+    margin-top: 50px;
   }
   .about_me img {
-    width:100%;
+    width: 100%;
     object-fit: cover;
     padding-right: 100px;
-
   }
-  .about_me .my_desc{
-    width:100%;
-    padding:10px;
+  .about_me .my_desc {
+    width: 100%;
+    padding: 10px;
     box-shadow: 0 5px 5px -5px #000000;
   }
-  .content-table table{
-    width:100%;
+  .content-table table {
+    width: 100%;
   }
   .content-table thead {
     display: none;
@@ -218,14 +214,13 @@ body{
   .content-table tr,
   .content-table td {
     display: block;
-    width:100%;
+    width: 100%;
   }
-  .content-table 
-  .content-table tr {
+  .content-table .content-table tr {
     margin-bottom: 15px;
   }
-  .content-table tbody tr:nth-child(even){
-    background-color:gold;
+  .content-table tbody tr:nth-child(even) {
+    background-color: gold;
   }
   .content-table td {
     text-align: right;

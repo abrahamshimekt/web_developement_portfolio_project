@@ -69,7 +69,6 @@ body {
   display: none;
 }
 
-
 .profile {
   display: grid;
   grid-template-columns: 30% 40%;
@@ -94,19 +93,19 @@ body {
   border-radius: 30rem;
   margin: 5rem;
 }
-.name h2{
-  margin-left:7rem;
-  position:relative;
-  margin-top:10px;
+.name h2 {
+  margin-left: 7rem;
+  position: relative;
+  margin-top: 10px;
 }
-.name h2:after{
-  content:"";
-  height:2px;
-  width:48%;
-  background:#f24432;
-  position:absolute;
-  left:0;
-  bottom:0;
+.name h2:after {
+  content: "";
+  height: 2px;
+  width: 48%;
+  background: #f24432;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .name div {
@@ -151,7 +150,7 @@ body {
   justify-content: center;
   font-family: "Lato", sans-serif;
   font-size: 20px;
-  margin-top:1.5rem;
+  margin-top: 1.5rem;
   padding: 1rem;
   box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.5);
 }
@@ -220,19 +219,19 @@ body {
     border-radius: 30rem;
     margin-left: 5rem;
   }
-  .name h2{
-    margin-left:5rem;
-    position:relative;
-    margin-top:10px;
+  .name h2 {
+    margin-left: 5rem;
+    position: relative;
+    margin-top: 10px;
   }
-  .name h2:after{
-    content:"";
-    height:2px;
-    width:57%;
-    background:#f24432;
-    position:absolute;
-    left:0;
-    bottom:0;
+  .name h2:after {
+    content: "";
+    height: 2px;
+    width: 57%;
+    background: #f24432;
+    position: absolute;
+    left: 0;
+    bottom: 0;
   }
   .profile {
     display: grid;
@@ -246,8 +245,8 @@ body {
     font-family: "Lato", sans-serif;
     margin: 0 10px;
     font-size: 23px;
-    padding:5px;
-    margin-top:1.5rem;
+    padding: 5px;
+    margin-top: 1.5rem;
   }
 
   .shaky-btn {

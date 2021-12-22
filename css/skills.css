@@ -4,8 +4,8 @@
   padding: 0rem;
   box-sizing: border-box;
 }
-body{
-  background-color:rgba(255,255,255,0);
+body {
+  background-color: rgba(255, 255, 255, 0);
 }
 .navbar {
   width: 100%;
@@ -74,7 +74,7 @@ body{
   list-style: none;
   display: flex;
 }
-.breadcrumb ul li{
+.breadcrumb ul li {
   font-family: "Poppins", sans-serif;
 }
 .breadcrumb ul li a {
@@ -86,8 +86,8 @@ body{
   color: grey;
   padding: 0.5rem;
 }
-.header{
-justify-content: center;
+.header {
+  justify-content: center;
 }
 .header h1 h2 {
   font-family: "Poppins", sans-serif;
@@ -96,27 +96,26 @@ justify-content: center;
 .myskills {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding:20px;
-  column-gap:20px;
-
+  padding: 20px;
+  column-gap: 20px;
 }
-.experience{
+.experience {
   box-shadow: 0 5px 5px -5px #000000;
 }
 .experience div h2 {
-  border-bottom:3px inset gold;
-  padding:4px;
-  font-family:"Poppins", sans-serif;
+  border-bottom: 3px inset gold;
+  padding: 4px;
+  font-family: "Poppins", sans-serif;
 }
-.experience div p{
-font-family:"lato","sans-serif";
-margin:10px 0;
-padding:20px;
+.experience div p {
+  font-family: "lato", "sans-serif";
+  margin: 10px 0;
+  padding: 20px;
 }
-.experience .btn{
-  background-color:rgba(0,255,0,1);
-  padding:10px;
-  margin-left:20px;
+.experience .btn {
+  background-color: rgba(0, 255, 0, 1);
+  padding: 10px;
+  margin-left: 20px;
 }
 .skill-container {
   grid-column: 2;
@@ -131,7 +130,7 @@ padding:20px;
   margin-top: 0rem;
 }
 .skill-container .skills .skill span {
-  font-family:"Lato", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.0625rem;
   font-weight: 500;
   opacity: 0;
@@ -250,8 +249,7 @@ padding:20px;
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 2rem;
-    padding:20px;
-  
+    padding: 20px;
   }
   .skill-container {
     grid-column: 1;
@@ -259,4 +257,3 @@ padding:20px;
     border-radius: 0.625rem;
   }
 }
-

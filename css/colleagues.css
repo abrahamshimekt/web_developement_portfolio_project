@@ -4,8 +4,8 @@
   padding: 0rem;
   box-sizing: border-box;
 }
-body{
-  background-color:rgba(255,255,255,0);
+body {
+  background-color: rgba(255, 255, 255, 0);
 }
 .navbar {
   width: 100%;
@@ -74,11 +74,11 @@ body{
   list-style: none;
   display: flex;
 }
-.breadcrumb ul li{
-  font-family:"Poppins","sans-serif";
+.breadcrumb ul li {
+  font-family: "Poppins", "sans-serif";
 }
 .breadcrumb ul li a {
-  font-family:"Poppins","sans-serif";
+  font-family: "Poppins", "sans-serif";
   text-decoration: none;
 }
 .breadcrumb ul > li + li:before {
@@ -86,32 +86,30 @@ body{
   color: grey;
   padding: 0.5rem;
 }
-.sup{
-  position:relative;
-  font-family:"Poppins","sans-serif";
+.sup {
+  position: relative;
+  font-family: "Poppins", "sans-serif";
 }
-.sup::after{
-  content:"";
-  height:2px;
-  width:9%;
-  background:#f24432;
-  position:absolute;
-  left:0;
-  bottom:0;
+.sup::after {
+  content: "";
+  height: 2px;
+  width: 9%;
+  background: #f24432;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
-.container h4{
-  font-family:"Poppins","sans-serif";
-
+.container h4 {
+  font-family: "Poppins", "sans-serif";
 }
-.container P{
-    font-family:"lato","sans-serif";
+.container P {
+  font-family: "lato", "sans-serif";
 }
-.who{
-  margin-left:500px;
-  margin-top:30px;
-  font-family:"Poppins","sans-serif" ;
+.who {
+  margin-left: 500px;
+  margin-top: 30px;
+  font-family: "Poppins", "sans-serif";
 }
-
 
 .coll {
   display: grid;
@@ -155,9 +153,9 @@ body{
   .checkarea {
     display: flex;
   }
-  .who{
-    margin-left:130px;
-    margin-top:50px;
+  .who {
+    margin-left: 130px;
+    margin-top: 50px;
   }
   .coll {
     display: grid;
@@ -169,18 +167,18 @@ body{
     grid-template-columns: 1fr;
     row-gap: 2rem;
   }
-  .sup{
-    position:relative;
-    font-family:"Poppins","sans-serif";
+  .sup {
+    position: relative;
+    font-family: "Poppins", "sans-serif";
   }
-  .sup::after{
-    content:"";
-    height:2px;
-    width:28.2%;
-    background:#f24432;
-    position:absolute;
-    left:0;
-    bottom:0;
+  .sup::after {
+    content: "";
+    height: 2px;
+    width: 28.2%;
+    background: #f24432;
+    position: absolute;
+    left: 0;
+    bottom: 0;
   }
 }
 .footer-bottom {
