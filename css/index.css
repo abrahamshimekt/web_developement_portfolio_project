@@ -95,6 +95,21 @@ body {
   border-radius: 30rem;
   margin: 5rem;
 }
+.name h2{
+  margin-left:7rem;
+  position:relative;
+  margin-top:10px;
+}
+.name h2:after{
+  content:"";
+  height:2px;
+  width:48%;
+  background:#f24432;
+  position:absolute;
+  left:0;
+  bottom:0;
+}
+
 .name div {
   display: flex;
   justify-content: center;
@@ -137,6 +152,7 @@ body {
   justify-content: center;
   font-family: "Lato", sans-serif;
   font-size: 20px;
+  margin-top:1.5rem;
 }
 .about div :hover {
   background: #000;
@@ -204,7 +220,18 @@ body {
     margin-left: 5rem;
   }
   .name h2{
-    
+    margin-left:5rem;
+    position:relative;
+    margin-top:10px;
+  }
+  .name h2:after{
+    content:"";
+    height:2px;
+    width:57%;
+    background:#f24432;
+    position:absolute;
+    left:0;
+    bottom:0;
   }
   .profile {
     display: grid;
@@ -219,6 +246,7 @@ body {
     margin: 0 10px;
     font-size: 23px;
     padding:5px;
+    margin-top:1.5rem;
   }
 
   .shaky-btn {
@@ -227,7 +255,7 @@ body {
     background: white;
     margin-top: 1rem;
     cursor: pointer;
-    margin-left: 6rem;
+    margin-left: 8rem;
   }
   .footer-start {
     display: grid;

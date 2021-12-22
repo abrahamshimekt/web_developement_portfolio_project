@@ -87,17 +87,21 @@ body{
 
 .about_me {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns:1fr;
   row-gap: 3rem;
-  margin-top: 10rem;
-  padding:60px;
-  justify-content: center;
+  width:100%;
+  padding:20px;
+
 }
 .who h1 h2 {
   font-family: "Poppins", sans-serif;
 }
 .who{
   margin-top:4.3rem;
+}
+.my_desc{
+  width:50%;
+  box-shadow: 0 5px 5px -5px #000000;
 }
 
 .content-table {
@@ -142,6 +146,7 @@ body{
   }
   .about_me .my_desc{
     width:100%;
+    box-shadow: 0 5px 5px -5px #000000;
   }
   .content-table table{
     width:100%;
