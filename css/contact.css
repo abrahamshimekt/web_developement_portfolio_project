@@ -106,10 +106,10 @@ body{
 
 }
 .address{
-  max-width:300px;
   display:grid;
-  padding:10px;
-  grid-template-rows:repeat(4,1fr);
+  width:100%;
+  height:100%;
+  grid-template-columns:1fr;
   align-items:center;
   text-align:center;
   text-align:center;
@@ -117,11 +117,14 @@ body{
   box-shadow: 0 5px 5px -5px #000000;
  
 }
+.addresstype img{
+  border-radius:100px;
+}
 .addresstype p{
   margin-top:0.89rem;
   font-family: "Poppins", sans-serif;
   font-size:15px;
-  box-shadow:0 0.5px 0.5px rgba(0,255,0,1);
+  box-shadow:0 0.5px 0.5px #B5651D;
 }
 .addresstype i{
   font-size:30px;
@@ -241,7 +244,7 @@ body{
     color:blue;
   }
   .addresstype img{
-    width:15%;
+    width:40%;
   }
   .address{
     row-gap:5px;

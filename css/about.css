@@ -90,8 +90,12 @@ body{
   grid-template-columns:1fr;
   row-gap: 3rem;
   width:100%;
-  padding:20px;
+  padding:100px 200px;
 
+}
+.my_photo{
+  width:100%;
+  padding-left: 130px;
 }
 .who h1 h2 {
   font-family: "Poppins", sans-serif;
@@ -100,8 +104,9 @@ body{
   margin-top:4.3rem;
 }
 .my_desc{
-  width:50%;
-  box-shadow: 0 5px 5px -5px #000000;
+  width:100%;
+  padding:20px;
+  box-shadow: 0 3px 5px -5px #000000;
 }
 
 .content-table {
@@ -120,7 +125,27 @@ body{
   color: #fff;
 }
 .content-table tbody tr:nth-child(even){
-  background-color:lawngreen;
+  background-color:#B5651D;
+}
+@media(min-width:1280px){
+  .about_me {
+    display: grid;
+    grid-template-columns:1fr;
+    row-gap: 3rem;
+    width:100%;
+    padding:100px 300px;
+  
+  }
+  .my_photo{
+    width:100%;
+    padding-left: 130px;
+  }
+  .my_desc{
+   width:92%;
+    padding:20px;
+    box-shadow: 0 3px 5px -5px #000000;
+  }
+
 }
 
 @media (max-width: 600px) {
@@ -143,9 +168,12 @@ body{
   .about_me img {
     width:100%;
     object-fit: cover;
+    padding-right: 100px;
+
   }
   .about_me .my_desc{
     width:100%;
+    padding:10px;
     box-shadow: 0 5px 5px -5px #000000;
   }
   .content-table table{
@@ -166,7 +194,7 @@ body{
     margin-bottom: 15px;
   }
   .content-table tbody tr:nth-child(even){
-    background-color:lawngreen;
+    background-color:gold;
   }
   .content-table td {
     text-align: right;
