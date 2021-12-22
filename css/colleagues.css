@@ -86,14 +86,6 @@ body{
   color: grey;
   padding: 0.5rem;
 }
-
-.who {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  justify-content: center;
-  margin-top: 5rem;
-  box-shadow: inset 1rem rgba(0, 0, 0, 0.5);
-}
 .sup{
   position:relative;
   font-family:"Poppins","sans-serif";
@@ -114,6 +106,13 @@ body{
 .container P{
     font-family:"lato","sans-serif";
 }
+.who{
+  margin-left:500px;
+  margin-top:30px;
+  font-family:"Poppins","sans-serif" ;
+}
+
+
 .coll {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -155,6 +154,10 @@ body{
   }
   .checkarea {
     display: flex;
+  }
+  .who{
+    margin-left:130px;
+    margin-top:50px;
   }
   .coll {
     display: grid;

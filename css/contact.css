@@ -89,15 +89,10 @@ body{
   padding:0.5rem;
 
 }
-#in-touch{
-  display:grid;
-  grid-template-columns:1fr;
-  row-gap:1rem;
-  margin-top:5em;
-  padding:50px;
-}
-#in-touch div h1{
-  margin-left:2rem;
+.touch {
+  margin-left:500px;
+  margin-top:30px;
+  font-family:"Poppins","sans-serif";
 }
 
 .container{
@@ -237,6 +232,32 @@ body{
   .left{
     height:200px;
   }
+  .touch{
+    margin-left:120px;
+    margin-top:50px;
+  }
+  /* .touch h2:before{
+    content:"";
+    display:block;
+    width:50px;
+    background:gold;
+    height:2px;
+    position:absolute;
+    left:66px;
+    top:26%;
+    z-index:-2;
+    }
+    .touch h2:after{
+      content:"";
+      display:block;
+      width:50px;
+      background:gold;
+      height:2px;
+      position:absolute;
+      right:110px;
+      top:26%;
+      z-index:-2;
+      } */
   .addresstype p{
     margin-top:0.5rem;
     font-family: "Poppins", sans-serif;

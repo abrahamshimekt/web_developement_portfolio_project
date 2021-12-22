@@ -74,8 +74,12 @@ body{
   list-style: none;
   display: flex;
 }
+.breadcrumb ul li{
+  font-family: "Poppins", sans-serif;
+}
 .breadcrumb ul li a {
   text-decoration: none;
+  font-family: "Poppins", sans-serif;
 }
 .breadcrumb ul > li + li:before {
   content: "\203a";

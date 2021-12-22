@@ -75,8 +75,12 @@ body{
   list-style: none;
   display: flex;
 }
+.breadcrumb ul li{
+  font-family: "Poppins", sans-serif;
+}
 .breadcrumb ul li a {
   text-decoration: none;
+  font-family: "Poppins", sans-serif;
 }
 .breadcrumb ul > li + li:before {
   content: "\203a";
@@ -101,8 +105,31 @@ body{
   font-family: "Poppins", sans-serif;
 }
 .who{
-  margin-top:4.3rem;
+  margin-left:500px;
+  margin-top:30px;
 }
+/* .who h2:before{
+  content:"";
+  display:block;
+  width:50px;
+  background:gold;
+  height:2px;
+  position:absolute;
+  left:450px;
+  top:31%;
+  z-index:-2;
+  }
+  .who h2:after{
+    content:"";
+    display:block;
+    width:50px;
+    background:gold;
+    height:2px;
+    position:absolute;
+    right:600px;
+    top:31%;
+    z-index:-2;
+    } */
 .my_desc{
   width:100%;
   padding:20px;
@@ -164,6 +191,10 @@ body{
     margin-top: 10rem;
     padding:10px;
     justify-content: center;
+  }
+  .who{
+    margin-left:120px;
+    margin-top:50px;
   }
   .about_me img {
     width:100%;
