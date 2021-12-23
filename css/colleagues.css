@@ -110,6 +110,13 @@ body {
   margin-top: 30px;
   font-family: "Poppins", "sans-serif";
 }
+.colls_social{
+  display: none;
+}
+.menu_btn{
+
+  cursor: pointer;
+}
 
 .coll {
   display: grid;

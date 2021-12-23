@@ -93,6 +93,7 @@ body {
   font-family: "Poppins", "sans-serif";
 }
 
+
 .lectures {
   display: grid;
   grid-template-columns: 1fr;
