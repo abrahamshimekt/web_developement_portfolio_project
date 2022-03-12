@@ -123,10 +123,15 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 2rem;
   margin: 3rem;
+
 }
 .professionals {
-  padding: 1rem;
+  padding: 10px;
   box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.5);
+}
+.professionals img{
+  width:100%;
+  height:70% !important
 }
 .professionals:hover {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
